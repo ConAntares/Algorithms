@@ -1,3 +1,3 @@
 # Algorithms
 
-My practices for Algorithms.
+My Repositories for Algorithms.
