@@ -1,2 +1,3 @@
-# MIT_Introduction_to_Algorithms
+# MIT Introduction to Algorithms
+
 My practices for MIT opencourse: Introduction to Algorithms.
