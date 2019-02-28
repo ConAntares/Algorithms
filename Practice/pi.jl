@@ -9,7 +9,9 @@ for n in 0:10000000
 end
 
 pi = 4s
+π = 4s
 t = time()
 
-println(pi)
+#println(pi)
+println(π)
 println("Time Interval: ",t-o," second")
