@@ -9,10 +9,10 @@ import sympy
 from Luke_Color import *
 
 # Global Setting
-plt.rcParams['font.family'] = 'cmr10'           # Require CMU Serif font file: cmr10.tff
+plt.rcParams['font.family'] = 'CMU Serif'           # Require CMU Serif font file: cmr10.tff
 plt.rcParams['font.size'] = '14'                # Font Size
 plt.rcParams['mathtext.fontset'] = 'cm'         # cm: Computer Mathematics
-plt.rcParams['mathtext.rm'] = 'cmr10'           # Require CMU Serif font file: cmr10.tff
+plt.rcParams['mathtext.rm'] = 'CMU Serif'           # Require CMU Serif font file: cmr10.tff
 plt.rcParams['text.usetex'] = True              # Require TeX environment
 formatter = mpl.ticker.ScalarFormatter(useMathText=True)
 formatter.set_scientific(True) 
