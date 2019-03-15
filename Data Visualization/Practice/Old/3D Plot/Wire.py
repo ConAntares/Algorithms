@@ -5,7 +5,7 @@ from matplotlib import rcParams
 
 rcParams['font.family'] = 'serif'
 rcParams['grid.color'] = '#DCDCDC'
-rcParams['grid.linestyle'] = 'dashed'
+#rcParams['grid.linestyle'] = 'dashed'
 
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
