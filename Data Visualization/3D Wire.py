@@ -8,14 +8,14 @@ from Luke_Color import *
 plt.rcParams['font.family'] = 'CMU Serif'
 #plt.rcParams['font.size'] = '14'               # Font Size
 plt.rcParams['mathtext.fontset'] = 'cm'         # cm: Computer Mathematics
-plt.rcParams['mathtext.rm'] = 'CMU Serif'           # Require CMU Serif font file: cmr10.tff
-plt.rcParams['grid.color'] = '#E1E1E1'
+plt.rcParams['mathtext.rm'] = 'CMU Serif'       # Require CMU Serif font file
+#plt.rcParams['grid.color'] = '#E1E1E1'
+plt.rcParams['grid.color'] = '#F0F0F0'
 plt.rcParams['grid.linestyle'] = 'solid'
 plt.rcParams['text.usetex'] = True              # Require TeX environment
 formatter = mpl.ticker.ScalarFormatter(useMathText=True)
 formatter.set_scientific(True) 
 formatter.set_powerlimits((-1,1))
-
 
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
