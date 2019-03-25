@@ -17,6 +17,8 @@ formatter = mpl.ticker.ScalarFormatter(useMathText=True)
 formatter.set_scientific(True) 
 formatter.set_powerlimits((-1,1))
 
+plt.rc('axes',edgecolor='green')
+
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 
