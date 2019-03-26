@@ -12,6 +12,7 @@ myOrange    = "#FF7800" # 255,120,000
 myGold      = "#FFC814" # 255,200,020
 myYellow    = "#F0F000" # 240,240,000
 myGreen     = "#32B432" # 050,180,050
+myEmerald   = "#64CDCD" # 100,100,205
 myCyan      = "#00B4DC" # 000,180,220
 myBlue      = "#1978BE" # 025,120,190
 myPurple    = "#A064DC" # 160,100,220
