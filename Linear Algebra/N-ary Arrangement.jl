@@ -1,19 +1,34 @@
 #### N-ary Arrangement
 
 # Input a Vector as Sequence:
-A = [1,2,3,4,5,4,3,2,1]
+A = [2,4,3,1]
 println("The sequence is ",A)
 
 # Print the elements number of the Vector:
 println("The number of elements is ",length(A))
 
-# initialize the Order Number:
+# Initialize the Order Number:
 o = Int64(0)
 
-# initialize the Reverse Order Number:
+# Initialize the Reverse Order Number:
 t = Int64(0)
 
 # Calculus the Order Number:
 for i in 1:length(A)
-    for j in 1:
+    for j in 1:(i-1)
+        # print(i,",",j,";")
+        if A[j] < A[i]
+            global o = o + 1
+        elseif A[j] > A[i]
+            global t = t + 1
+        end
+    end
+end
+println("The Order Number of this Sequence is: ",o)
+println("The Reverse Order Number of this Sequence is: ",t)
 
+if rem(0,2)==0
+    println("This Sequence is even.")
+elseif  rem(0,1)==0
+    println("This Sequence is odd.")
+end
