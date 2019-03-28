@@ -24,7 +24,7 @@ end
 println("The Order Number of this Sequence is: ",o)
 println("The Reverse Order Number of this Sequence is: ",t)
 
-# To determine whether the sequence is odd or even:
+# Determine whether the sequence is odd or even:
 if rem(0,2) == 0
     println("This Sequence is even.")
 elseif  rem(0,1) == 0
