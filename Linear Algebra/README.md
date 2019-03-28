@@ -1,4 +1,4 @@
-# Algorithms for Linear Algebra with Julia
+# Algorithms for Linear Algebra
 
 参考教材:  
 丘维声, 高等代数, 科学出版社, 2013.
