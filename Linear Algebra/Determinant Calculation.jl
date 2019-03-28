@@ -13,5 +13,6 @@ A =
 
 # Calculate the value of determinant
 d = det(A)
-
 println("The value of your determinant is ",d)
+dt = det(A')
+println("The value of your transposed determinant is ",dt)
