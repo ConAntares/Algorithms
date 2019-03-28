@@ -3,13 +3,10 @@
 # Input a Vector as Sequence:
 A = [2,4,3,1]
 println("The sequence is ",A)
-
 # Print the elements number of the Vector:
 println("The number of elements is ",length(A))
-
 # Initialize the Order Number:
 o = Int64(0)
-
 # Initialize the Reverse Order Number:
 t = Int64(0)
 
@@ -27,8 +24,9 @@ end
 println("The Order Number of this Sequence is: ",o)
 println("The Reverse Order Number of this Sequence is: ",t)
 
-if rem(0,2)==0
+# To determine whether the sequence is odd or even:
+if rem(0,2) == 0
     println("This Sequence is even.")
-elseif  rem(0,1)==0
+elseif  rem(0,1) == 0
     println("This Sequence is odd.")
 end
