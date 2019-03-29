@@ -10,7 +10,7 @@ o = Int64(0)
 # Initialize the Reverse Order Number:
 t = Int64(0)
 
-# Calculus the Order Number and the :
+# Calculus the Order Number and the Reverse Order Number:
 for i in 1:length(A)
     for j in 1:(i-1)
         # print(i,",",j,";")
