@@ -17,7 +17,7 @@ M = zeros(nRow-1,nCol-1)
 # Initialize the algebraic remainder:
 A = zeros(nRow-1,nCol-1)
 
-# Assign values to a the remainder and algebraic remainder:
+# Assign values to the remainder and algebraic remainder:
 for n = 1:nCol              # D[1,1], D[1,2], ... , D[1,n]
     for i = 1:nRow-1
         for j = 1:nCol-1
