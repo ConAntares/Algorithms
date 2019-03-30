@@ -1,4 +1,4 @@
-#### Algebraic remainder
+#### Algebraic Remainder of Sub-determinant
 
 # Input a n*n array as the determinant you want to analysis.
 D = 
