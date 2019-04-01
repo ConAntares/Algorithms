@@ -19,7 +19,7 @@ C = [1,2,3]
 A = [D C]
 # The rank of the augmented:
 Ra = rank(A)
-println("The rank of your augmented matrix is $Rd")
+println("The rank of your augmented matrix is $Ra")
 
 if Ra == Rd
     println("The equation set which determined by matrix A has a solution.")
