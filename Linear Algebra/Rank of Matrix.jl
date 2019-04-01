@@ -21,8 +21,8 @@ A = [D C]
 Ra = rank(A)
 println("The rank of your augmented matrix is $Ra")
 
-if Ra == Rd
+if Ra == size(D,2)
     println("The equation set which determined by matrix A has a solution.")
-elseif Ra != Rd
-    println("The equation set which determined by matrix A has no solution or has infinite solutions.")
+elseif Ra < size(D,2)
+    println("The equation set which determined by matrix A has infinite solutions.")
 end
