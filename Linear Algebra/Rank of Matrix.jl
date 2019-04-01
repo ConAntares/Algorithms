@@ -7,14 +7,14 @@ D =
 [
     4 2 3;
     3 4 6;
-    3 4 6;
+    5 3 1;
 ]
 # Then the Rd is the rank of your matrix:
 Rd = rank(D)
 println("The rank of your matrix is $Rd")
 
 # Input a 1*n array as the vector of constant term.
-C = [1,2,2]
+C = [1,2,3]
 # The augmented matrix is:
 A = [D C]
 # The rank of the augmented:
