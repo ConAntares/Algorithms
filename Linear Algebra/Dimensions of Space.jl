@@ -29,3 +29,9 @@ println("The dimension of solution space of your first equation set is $D1,")
 println("The dimension of solution space of your second equation set is $D2,")
 println("The dimension of solution space of the intersection is $Di,")
 println("The dimension of solution space of the sum is $Da,")
+
+"""
+dim(V1+V2) = dim(V1) + dim(V1) - dim(V1∩V2)
+    proof:
+
+"""
