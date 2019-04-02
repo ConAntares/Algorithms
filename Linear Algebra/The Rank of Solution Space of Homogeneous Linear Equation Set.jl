@@ -1,5 +1,7 @@
 #### The Rank of Solution Space of Homogeneous Linear Equation Set
 
+using LinearAlgebra
+
 # Input a array as the matrix you want to analysis.
 D = 
 [
@@ -25,4 +27,3 @@ elseif Rd < n
 end
 
 println("The rank of solution space of homogeneous linear equation set is $Rw." )
-
