@@ -2,7 +2,7 @@
 
 using LinearAlgebra
 
-# Input 2 matrixs as your spaces (only homogeneous linear equations analyzed):
+# Input 2 matrices as your spaces (only homogeneous linear equations analyzed):
 S1 = [1 2 -1;]  # x + 2y -z = 0, z = x + 2y
 S2 = [2 1 -2;]  # 2x + y -2z = 0, z  = x + 1/2y
 
@@ -30,8 +30,20 @@ println("The dimension of solution space of your second equation set is $D2,")
 println("The dimension of solution space of the intersection is $Di,")
 println("The dimension of solution space of the sum is $Da,")
 
+
+
 """
-dim(V1+V2) = dim(V1) + dim(V1) - dim(V1∩V2)
-    proof:
+proof: dim(V1+V2) = dim(V1) + dim(V1) - dim(V1∩V2)
+
+Set a base of V1∩V2:    α(1),α(2),...,α(m);
+Set a base of V1:       α(1),α(2),...,α(m),β(1),β(2),..,β(n1-m);
+Set a base of V2:       α(1),α(2),...,α(m),γ(1),γ(2),..,γ(n2-m);
+So, A base of V1+V2 is: α(1),α(2),...,α(m),β(1),β(2),..,β(n1-m),γ(2),..,γ(n2-m);
+Set:                    k(1)α(1)+,...,+k(m)α(m)+p(1)β(1)+,...,+p(n1-m)β(n1-m)+q(1)γ(1)+,...,q(n2-m)γ(n2-m)=0;
+Then, we have:          q(1)γ(1)+,...,q(n2-m)γ(n2-m)=-(k(1)α(1)+,...,+k(m)α(m)+p(1)β(1)+,...,+p(n1-m)β(n1-m));
+Since:                  q(1)γ(1)+,...,q(n2-m)γ(n2-m)∈V2,
+                        k(1)α(1)+,...,+k(m)α(m)+p(1)β(1)+,...,+p(n1-m)β(n1-m)∈V1;
+Then they ∈ V1∩V2;
+∃(l(1),..,l(m)):        
 
 """
