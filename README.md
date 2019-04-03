@@ -1,8 +1,10 @@
 # Algorithms
 
-[![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
-[![License: NPL](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
-[![Made by Julia](JuliaBadge.svg)](https://julialang.org/)
+[![Made by Julia](MadebyJulia.svg)](https://julialang.org/)
+[![License: LGPL v3](LicenseLGPLv3.svg)](https://www.gnu.org/licenses/lgpl-3.0)
+[![License: NPL](LicenseNPL.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
+
+![Opensource](OpenSource.svg)
 
 My Repositories for Algorithms.
 
