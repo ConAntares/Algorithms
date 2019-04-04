@@ -10,4 +10,8 @@
 
 Repository for Algorithms.
 
+Julia is the main Language.
+
+Thank you for visiting.
+
 My QQ Group: 436192270
