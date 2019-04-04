@@ -1,10 +1,10 @@
 # Algorithms
 
-[![Made by Julia](MadebyJulia.svg)](https://julialang.org/)
-[![License: LGPL v3](LicenseLGPLv3.svg)](https://www.gnu.org/licenses/lgpl-3.0)
-[![License: NPL](LicenseNPL.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
+[![Made by Julia](Attachments/MadebyJulia.svg)](https://julialang.org/)
+[![LGPL v3 License](Attachments/LicenseLGPLv3.svg)](https://www.gnu.org/licenses/lgpl-3.0)
+[![Anti996](Attachments/LinkNPL.svg)](https://996.icu)
 
-![Opensource](OpenSource.svg)
+![Opensource](Attachments/OpenSource.svg)
 
 My Repositories for Algorithms.
 
