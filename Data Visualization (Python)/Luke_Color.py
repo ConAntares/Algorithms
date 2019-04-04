@@ -14,6 +14,7 @@ myYellow    = "#F0F000" # 240,240,000
 myGreen     = "#32B432" # 050,180,050
 myEmerald   = "#64CDCD" # 100,100,205
 myCyan      = "#00B4DC" # 000,180,220
+mySky       = "#00A0DC" # 000,160,220
 myBlue      = "#1978BE" # 025,120,190
 myPurple    = "#A064DC" # 160,100,220
 myViolet    = "#8C14C8" # 140,020,200
