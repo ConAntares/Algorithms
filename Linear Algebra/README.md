@@ -1,5 +1,9 @@
 # Algorithms for Linear Algebra
 
+[![LGPL v3 License](https://github.com/ConAntares/About/blob/master/Attachments/LicenseLGPLv3.svg)](https://www.gnu.org/licenses/lgpl-3.0)
+[![Made by Julia](https://github.com/ConAntares/About/blob/master/Attachments/MadebyJulia.svg)](https://julialang.org/)
+[![Anti 996](https://github.com/ConAntares/About/blob/master/Attachments/LinkNPL.svg)](https://996.icu)
+
 ## 参考教材
 
 丘维声, 高等代数, 2013, 科学出版社.
