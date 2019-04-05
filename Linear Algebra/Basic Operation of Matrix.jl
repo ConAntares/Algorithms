@@ -1,6 +1,7 @@
 #### Basic Operation of Matrix
 
 using LinearAlgebra
+using SparseArrays
 
 # Input some arrays as the matrics you want to analysis.
 A = 
@@ -21,7 +22,8 @@ C =
     1 2 3 4
 ]
 
-# Matrix multiplication
+## Matrix Multiplication
+
 A*B
     # 3×3 Array{Int64,2}:
     #  11   8   5
@@ -51,18 +53,11 @@ Vb*Va
     #  4   8  12
     #  6  12  18
     #  8  16  24
-
 J_3 = [1;1;1]*[1 1 1]
     # 3×3 Array{Int64,2}:
     #  1  1  1
     #  1  1  1
     #  1  1  1
-
-I_3 = Array(UniformScaling{Float64}(1),3,3)
-    # 3×3 Array{Float64,2}:
-    #  1.0  0.0  0.0
-    #  0.0  1.0  0.0
-    #  0.0  0.0  1.0
 
 A = 
 [
@@ -108,3 +103,75 @@ A'
     #  2  1  4
     #  3  2  1
     #  4  3  2
+
+## Special Matrix
+
+# Unit Matrix
+I_3 = Array(UniformScaling{Float64}(1),3,3)
+    # 3×3 Array{Float64,2}:
+    #  1.0  0.0  0.0
+    #  0.0  1.0  0.0
+    #  0.0  0.0  1.0
+I_3s = sparse(I,3,3)
+    # 3×5 SparseMatrixCSC{Bool,Int64} with 3 stored entries:
+    #   [1, 1]  =  true
+    #   [2, 2]  =  true
+    #   [3, 3]  =  true
+
+
+A = 
+[
+    1 2 3;
+    4 5 6;
+    7 8 9
+]
+
+# Diagonal matrix
+Diagonal(A)
+    # 3×3 Diagonal{Int64,Array{Int64,1}}:
+    #  1  ⋅  ⋅
+    #  ⋅  5  ⋅
+    #  ⋅  ⋅  9
+
+# Diagonal matrix
+UpperTriangular(A)
+    # 3×3 UpperTriangular{Int64,Array{Int64,2}}:
+    #  1  2  3
+    #  ⋅  5  6
+    #  ⋅  ⋅  9
+LowerTriangular(A)
+    # 3×3 LowerTriangular{Int64,Array{Int64,2}}:
+    #  1  ⋅  ⋅
+    #  4  5  ⋅
+    #  7  8  9
+
+# Fundamental matrix
+A = zeros(3,3)
+A[2,3] = 1
+A
+    # 3×3 Array{Float64,2}:
+    #  0.0  0.0  0.0
+    #  0.0  0.0  1.0
+    #  0.0  0.0  0.0
+
+# Elementary matrix
+Ia = ones(4,4)
+Is = Ia^0
+Is[3,:]=4*Is[2,:]+Is[3,:]
+Is
+    # 4×4 Array{Float64,2}:
+    #  1.0  0.0  0.0  0.0
+    #  0.0  1.0  0.0  0.0
+    #  0.0  4.0  1.0  0.0
+    #  0.0  0.0  0.0  1.0
+Ia = ones(4,4)
+Is = Ia^0
+Re=Is[3,:]
+Is[3,:]=Is[2,:]
+Is[2,:]=Re
+Is
+    # 4×4 Array{Float64,2}:
+    #  1.0  0.0  0.0  0.0
+    #  0.0  0.0  1.0  0.0
+    #  0.0  1.0  0.0  0.0
+    #  0.0  0.0  0.0  1.0
