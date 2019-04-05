@@ -200,3 +200,10 @@ inv(inv(M))
     # 2×2 Array{Float64,2}:
     #  1.0  3.0
     #  5.0  7.0
+
+# Adjoint matrix
+dm = det(M)
+dm * inv(M)
+    # 2×2 Array{Float64,2}:
+    #   7.0  -3.0
+    #  -5.0   1.0
