@@ -207,3 +207,17 @@ dm * inv(M)
     # 2×2 Array{Float64,2}:
     #   7.0  -3.0
     #  -5.0   1.0
+
+# Basic transformation
+P = Array(UniformScaling{Float64}(1),2,2) / M
+    # 2×2 Array{Float64,2}:
+    #  -0.875   0.375
+    #   0.625  -0.125
+Minv = P*Array(UniformScaling{Float64}(1),2,2)
+    # 2×2 Array{Float64,2}:
+    #  -0.875   0.375
+    #   0.625  -0.125
+inv(M)
+    # 2×2 Array{Float64,2}:
+    #  -0.875   0.375
+    #   0.625  -0.125
