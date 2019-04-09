@@ -64,7 +64,7 @@ np.array:
     Creates an array for which the elements are given by an array-like object, which,
     for example, can be a (nested) Python list, a tuple, an iterable sequence,
     or another ndarray instance.
-np.zero:
+np.zeros:
     Creates an array – with the specified dimensions and data type – that is filled with zeros.
 np.ones:
     Creates an array – with the specified dimensions and data type – that is filled with ones.

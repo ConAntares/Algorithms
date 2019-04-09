@@ -18,14 +18,13 @@ I = [1,3,5]
 # Input the ordinals of columns you want to extract:
 J = [2,3,4]
 
+## Fortran-like code:
 # Initialize the sub-determinant:
 S = zeros(k,k)
 # Initialize the remainder:
 M = zeros(n-k,n-k)
 # Initialize the algebraic remainder:
 A = zeros(n-k,n-k)
-
-# Fortran-like code:
 # Assign values to the sub-determinant:
 a = 1
 b = 1
@@ -39,7 +38,7 @@ for i in I
 end
 println("The sub-determinant is ", S)
 
-# Julia-like code:
+## Julia-like code:
 # Assign values to the sub-determinant:
 S = view(D,I,J)
 println("The sub-determinant is ", S)
