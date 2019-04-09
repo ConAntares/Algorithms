@@ -349,3 +349,275 @@ T.ndim      # 3
 T.shape     # (2, 3, 4)
 T.size      # 24
 T.nbytes    # 192
+
+## Array Indexing and Slicing
+# Indexing and Slicing
+"""
+  Elements and subarrays of NumPy arrays are accessed using the standard square bracket notation that is also used with for example Python lists.
+Within the square bracket, a variety of different index formats are used for different types of element selection.
+In general, the expression within the bracket is a tuple,
+where each item in the tuple is a specification of which elements to select from each axis (dimension) of the array.
+"""
+
+# One-dimensional Arrays
+"""
+  Along a single axis, integers are used to select single elements, 
+and so-called slices are used to select ranges and sequences of elements. 
+Positive integers are used to index elements from the beginning of the array(index starts at 0), 
+and negative integers are used to index elements from the end of the array, 
+where the last element is indexed with -1, the second-to-last element with -2, and so on.
+  Slices are specified using the: notation that is also used for Python lists. 
+In this notation, a range of elements can be selected using an expressions like m:n, 
+which selects elements starting with m and ending with n−1 (note that the nth element is not included). 
+The slice m:n can also be written more explicitly as m:n:1, 
+where the number 1 specifies that every element between m and n should be selected. 
+To select every second element between m and n, use m:n:2, and to select every p element, use m:n:p, and so on. 
+If p is negative, elements are returned in reversed order starting from m to n+1,
+which implies that m has be larger than n in this case. 
+"""
+
+# Examples of Array Indexing and Slicing Expression
+"""
+  Expression      Description
+  a[ m]           Select element at index m, where m is an integer, with counting from 0. 
+  a[-m]           Select the m th element from the end of list, where m is an integer.
+                  The last element in the list is addressed as -1.
+  a[m:n]          Select element with index starting at m and ending at n-1, where both m and n are integer.
+  a[:], a[0:-1]   Select all elements in the given axis.
+  a[m:],a[m:01]   Select elements starting with index m and going up to the last.
+  a[:n]           Select elements starting with index 0 and going to index n-1.
+  a[m:n:p]        Select elements with index m through n(exclusive), with increment p.
+  a[::-1]         Select all the elements, in reverse order.
+"""
+
+#%%
+import numpy as np
+a = np.arange(0,11,1)       # Contains a sequence of integers between 0 and 10.
+print ("a =",a)
+print ("The first element a[0] is",a[0])
+print ("The last element a[-1] is",a[-1])
+print ("The 5th number, at index 4 is",a[4])
+print ("The second to the last: ",a[1:-1])
+print ("The second to the last with increment 2:",a[1:-1:2])
+print ("The first five element",a[:5])
+print ("The last five elements",a[-5:])
+print ("The reversed array with slice -1", a[::-1])
+print ("The reversed array with slice -2", a[::-2])
+
+## Reshaping and Resizing
+"""
+When working with data in array form, it is often useful to rearrange arrays and alter the way they are interpreted. 
+For example, an N*N matrix array could be rearranged into a vector of length N^2, 
+or a set of one-dimensional arrays could be concatenated together, or stacked next to each other to form a matrix. 
+NumPy provides a rich set of functions of this type of manipulation. 
+See this Table for a summary of a selection of these functions.
+"""
+
+"""
+# Array[a:b,c:d]
+    The matrix from (a,c) to (b-1,d-1)
+    Array[[a,b],[c,d]]
+    The elements: (a,c) and (b,d)
+"""
+
+
+"""
+# Array
+    [0,0]   [0,1]   [0,2]   [0,3]
+    [1,0]   [1,1]   [1,2]   [1,3]
+    [2,0]   [2,1]   [2,2]   [2,3]
+    [3,0]   [3,1]   [3,2]   [3,3]
+
+
+# data[0]
+    [0,0]   [0,1]   [0,2]   [0,3]
+
+
+
+
+# data[1,:]
+
+    [1,0]   [1,1]   [1,2]   [1,3]
+
+
+
+# data[:,1]
+            [0,1]
+            [1,1]
+            [2,1]
+            [3,1]
+
+# data[0:2,0:2]
+    [0,0]   [0,1]
+    [1,0]   [1,1]
+
+
+
+# data[0:2,2:4]
+                    [0,2]   [0,3]
+                    [1,2]   [1,3]
+
+
+
+# data[::2,::2]
+    [0,0]           [0,2]
+
+    [2,0]           [2,2]
+
+
+# data[1::2,1::2]
+
+            [1,1]           [1,3]
+
+            [3,1]           [3,3]
+
+# data[:,[0,3]]
+    [0,0]                   [0,3]
+    [1,0]                   [1,3]
+    [2,0]                   [2,3]
+    [3,0]                   [3,3]
+
+# data[[1,3],[0,3]]
+
+    [1,0]
+
+                            [3,3]
+
+# data
+    [0,0]   [0,1]   [0,2]   [0,3]
+    [1,0]   [1,1]   [1,2]   [1,3]
+    [2,0]   [2,1]   [2,2]   [2,3]
+    [3,0]   [3,1]   [3,2]   [3,3]
+
+# data[:,np.array[[False,True,True,False]]]
+            [0,1]   [0,2]
+            [1,1]   [1,2]
+            [2,1]   [2,2]
+            [3,1]   [3,2]
+
+# data[1:3,np.array[[False,True,True,False]]]
+    [0,0]   [0,1]   [0,2]   [0,3]
+    [1,0]   [1,1]   [1,2]   [1,3]
+    [2,0]   [2,1]   [2,2]   [2,3]
+    [3,0]   [3,1]   [3,2]   [3,3]
+"""
+
+# Summary of NumPy functions for manipulating the dimensions and the shape of arrays
+"""
+np.reshape, np.ndarray.reshape: 
+    Reshape an N-Dimensional array. The total number of elements must remain the same.
+np.ndarray.flatten:
+    Create a copy of an N-Dimensional array and reinterpret it as a One-Dimensional array, that is all dimensions are collapsed into one.
+np.ravel, np.ndarray,ravel:
+    Create a view (if possible, otherwise a copy) of an N-dimensional array in which it is interpreted as a One-Dimensional array.
+np.squeeze:
+    Remove axes with length 1.
+np.expand_dims, np.newaxis:
+    Adds a new axis (dimension) of length 1 to an array, where np.newaxis is used with array indexing.
+np.transpose, np.ndarray.transpose, np.ndarray.T:
+    Transpose the array. The transpose operation corresponds to reversing (or more generally, permuting) the axes of the array.
+np.vstack:
+    Stack a list of arrays vertically (along axis 0): For example, given a list of row vectors, append the rows to form a matrix.
+np.hstack:
+    Stack a list of arrays horizontally (along axis 1): For example, given a list of column vectors, append the columns to form a matrix.
+np.dstack:
+    Stack arrays depth-wise (along axis 2).
+np.concatenate:
+    Create a new array by appending arrays after each other, along a given axis.
+np.resize:
+    Resize an array. Creates a new copy of the original array, with the requested size. 
+    If necessary, the original array will repeated to fill up the new array.
+np.append:
+    Append an element to an array. Creates a new copy of the array.
+np.insert:
+    Insert a new element at a given position. Creates a new copy of the array.
+np.delete:
+    Delete an element at a given position. Creates a new copy of the array.
+
+Reshaping an array does not require modifying the underlying array data; it only changes in how the data is interpreted, 
+by redefining the array’s strides attribute. An example of this type of operation is a 2*2 array (matrix) that is reinterpreted as a 1*4 array (vector). 
+In NumPy, the function np.reshape, or the ndarray class method reshape, can be used to reconfigure how the underlying data is interpreted. 
+"""
+
+# Example
+import numpy as np
+
+α = np.array([[1,2],
+              [3,4]])
+β = np.arange(0,5)
+γ = np.arange(1,6)
+
+Reshape = np.reshape(α,(1,4))
+α
+    # array([[1, 2],
+    #        [3, 4]])
+Reshape
+    # array([[1, 2, 3, 4]])
+α.reshape(4)
+    # array([1, 2, 3, 4])
+α.reshape(1,4)
+    # array([[1, 2, 3, 4]])
+α.reshape(2,2)
+    # array([[1, 2],
+    #        [3, 4]])
+α.reshape(4,1)
+    # array([[1],
+    #        [2],
+    #        [3],
+    #        [4]])
+α.reshape(4,1,1)    # Generate 4*1*1 array
+    # array([[[1]],
+    #        [[2]],
+    #        [[3]],
+    #        [[4]]])
+α.reshape(2,2,1)     # Generate 2*2*1 array
+    # array([[[1],
+    #         [2]],
+    #        [[3],
+    #         [4]]])
+α.reshape(2,1,2)     # Generate 2*1*2 array
+    # array([[[1, 2]],
+    #        [[3, 4]]])
+α.reshape(1,2,2)     # Generate 1*2*2 array
+    # array([[[1, 2],
+    #         [3, 4]]])
+α.reshape(1,1,4)     # Generate 1*1*4 array
+    # array([[[1, 2, 3, 4]]])
+np.ndarray.flatten(α)
+    # array([1, 2, 3, 4])
+β   
+    # array([0, 1, 2, 3, 4])
+column = β[:,np.newaxis]
+column
+    # array([[0],
+    #        [1],
+    #        [2],
+    #        [3],
+    #        [4]])
+row = β[np.newaxis,:]
+row
+    # array([[0, 1, 2, 3, 4]])
+γ
+    # array([1, 2, 3, 4, 5])
+np.vstack((β,β,β))
+    # array([[0, 1, 2, 3, 4],
+    #        [0, 1, 2, 3, 4],
+    #        [0, 1, 2, 3, 4]])
+np.vstack((γ,γ,γ))
+    # array([[1, 2, 3, 4, 5],
+    #        [1, 2, 3, 4, 5],
+    #        [1, 2, 3, 4, 5]])
+np.hstack((β,β,β))
+    # array([0, 1, 2, 3, 4, 0, 1, 2, 3, 4, 0, 1, 2, 3, 4])
+np.hstack((γ,γ,γ))
+    # array([1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5])
+np.vstack((row,row,row))
+    # array([[0, 1, 2, 3, 4],
+    #        [0, 1, 2, 3, 4],
+    #        [0, 1, 2, 3, 4]])
+np.hstack((column,column,column))
+    # array([[0, 0, 0],
+    #        [1, 1, 1],
+    #        [2, 2, 2],
+    #        [3, 3, 3],
+    #        [4, 4, 4]])
