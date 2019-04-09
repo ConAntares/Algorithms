@@ -13,6 +13,6 @@ A =
 
 # Calculate the value of determinant
 d = det(A)
-println("The value of your determinant is ",d)
+println("The value of your determinant is ",d)              # 187
 dt = det(A')
-println("The value of your transposed determinant is ",dt)
+println("The value of your transposed determinant is ",dt)  # 187
