@@ -420,7 +420,6 @@ See this Table for a summary of a selection of these functions.
     The elements: (a,c) and (b,d)
 """
 
-
 """
 # Array
     [0,0]   [0,1]   [0,2]   [0,3]
