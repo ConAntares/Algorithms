@@ -12,13 +12,10 @@ nRow = D.shape[1]
 # The number of column:
 nCol = D.shape[0]
 
-# Initial sub determinant
-Mvl = 
-
 for n in np.arange(0,nCol):
     Mvl = D[1:nRow,:][:,0:n]
     Mvr = D[1:nRow,:][:,n+1:nCol]
-    Mv = np.vstack((Mvl,Mvr))
-    # Av = (-1)**(1+n)*Mv
-    # print("The of remainder D[",n,"] is", Mv, ",")
-    # print("The of algebraic remainder D[",n,"] is", Av, ".")
+    Mv = np.hstack((Mvl,Mvr))
+    Av = (-1)**(1+n)*Mv
+    print("The of remainder D[",n,"] is \n", Mv, ",")
+    print("The of algebraic remainder D[",n,"] is \n", Av, ".")
