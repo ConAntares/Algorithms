@@ -7,6 +7,6 @@ In general, a linear equation system can be written on the form:
 
 using LinearAlgebra
 
-# Input a n*m array as the coefficient term matrix:
+# Input a m*n array as the coefficient term matrix:
 
 # Input a m*1 array as the constant term matrix:
