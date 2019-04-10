@@ -11,7 +11,6 @@ D =
     3 3 9 6;
     8 2 4 8;
     2 4 9 5
-
 ]
 # The rank of your matrix:
 Rd = rank(D)
