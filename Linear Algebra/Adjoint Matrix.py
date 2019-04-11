@@ -8,6 +8,7 @@ S = np.array([[1,6,4,3],
               [5,4,6,6],
               [4,5,2,5]])
 A = np.mat(S)
+
 # The value of determinant
 np.linalg.det(A)
 # The rank
