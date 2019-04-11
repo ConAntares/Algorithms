@@ -43,3 +43,12 @@ elseif Ra == Rc
         println("The original equations set has infinite solution sets.")
     end
 end
+
+# Calculate the solution vector with A*X=B => X=inv(A)*B
+if Ra == Rc & Ra ==n
+    X = inv(A)*B
+    println("The solutions of your equation sets is:")
+    for i in 1:length(X)
+        println("x[$i] = $(X[i])")
+    end
+end

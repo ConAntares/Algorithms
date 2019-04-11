@@ -14,8 +14,7 @@ A = np.array([[1,6,4,3],
               [4,5,2,5]])
 
 # Input a m*1 array as the constant term matrix
-# B = np.array([[4],[3],[6],[1]])
-B = np.array([[0],[0],[0],[0]])
+B = np.array([[4],[3],[6],[1]])
 # The augmented matrix
 C = np.hstack((A,B))
 # A zeros vector
@@ -41,3 +40,10 @@ elif Ra == Rc:
         print("The original equations set has one solutions set.")
     elif Ra < n:
         print("The original equations set has infinite solution sets.")
+
+# Calculate the solution vector with A*X=B => X=inv(A)*B
+if Ra == Rc & Ra ==n:
+    X = np.dot(np.linalg.inv(A),B)
+    print("The solutions of your equation sets is:")
+    for i in np.arange(0,n):
+        print("x[%s] ="%i,X[i])
