@@ -1,6 +1,5 @@
 #### Rank of Matrix
 
-#%%
 import numpy as np
 
 # Input a n*n array as the matrix you want to analysis.

@@ -1,6 +1,5 @@
 #### Expand Determinant by the 1st Row
 
-#%%
 import numpy as np
 
 # Input a n*n array as the determinant you want to analysis.

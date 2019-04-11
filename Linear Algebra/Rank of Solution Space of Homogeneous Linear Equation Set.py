@@ -1,6 +1,5 @@
 #### The Rank of Solution Space of Homogeneous Linear Equation Set
 
-#%%
 import numpy as np
 
 # Input a array as the matrix you want to analysis.

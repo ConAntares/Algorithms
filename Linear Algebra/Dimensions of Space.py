@@ -1,6 +1,5 @@
 #### The Dimensions of Sub Space
 
-#%%
 import numpy as np
 
 # Input 2 matrices as your spaces (only homogeneous linear equations analyzed):

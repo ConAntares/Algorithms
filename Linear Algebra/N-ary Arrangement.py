@@ -1,6 +1,5 @@
 #### N-ary Arrangement
 
-#%%
 import numpy as np
 
 # Input a Vector as Sequence:
