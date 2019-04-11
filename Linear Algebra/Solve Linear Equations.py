@@ -14,9 +14,10 @@ A = np.array([[1,6,4,3],
               [4,5,2,5]])
 
 # Input a m*1 array as the constant term matrix
-B = np.array([[4],[3],[6],[1]])
+# B = np.array([[4],[3],[6],[1]])
+B = np.array([[0],[0],[0],[0]])
 # The augmented matrix
-J = np.hstack((A,B))
+C = np.hstack((A,B))
 # A zeros vector
 Z = np.zeros((B.shape[0],1))
 if B.any() == 0:
@@ -28,17 +29,15 @@ elif B.any() != 0:
 n = A.shape[1]
 # The rank of coefficient term matrix
 Ra = np.linalg.matrix_rank(A)
+# The rank of augmented matrix
+Rc = np.linalg.matrix_rank(C)
 # Calculate the value of determinant
 Da = np.linalg.det(A)
 
-if Da != 0:
-    print("The original equations set has one solutions set.")
-elif Da == 0:
-    if Ra < n
-
-
-
-
-
-
-    print("The original equations set has no solutions set or infinite solution sets.")
+if Ra < Rc:
+    print("The original equations set has no solutions set.")
+elif Ra == Rc:
+    if Ra == n:
+        print("The original equations set has one solutions set.")
+    elif Ra < n:
+        print("The original equations set has infinite solution sets.")

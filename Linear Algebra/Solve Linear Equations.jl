@@ -16,7 +16,7 @@ A = [1 6 4 3;
 # Input a m*1 array as the constant term matrix
 B = [4;3;6;1]
 # The augmented matrix
-J = hcat(A,B)
+C = hcat(A,B)
 # A zeros vector:
 Z = zeros(size(B,1),1)
 if iszero(B) == true
@@ -29,6 +29,17 @@ end
 n = size(A,2)
 # The rank of coefficient term matrix
 Ra = rank(A)
+# The rank of augmented matrix
+Rc = rank(C)
 # Calculate the value of determinant
 Da = det(A)
 
+if Ra < Rc
+    println("The original equations set has no solutions set.")
+elseif Ra == Rc
+    if Ra == n
+        println("The original equations set has one solutions set.")
+    elseif Ra < n
+        println("The original equations set has infinite solution sets.")
+    end
+end
