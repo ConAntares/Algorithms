@@ -20,12 +20,15 @@ J = hcat(A,B)
 # A zeros vector:
 Z = zeros(size(B,1),1)
 if iszero(B) == true
-    println("The original equation set is homogeneous.")
+    println("The original equations set is homogeneous.")
 elseif iszero(B) == false
-    println("The original equation set is not homogeneous.")
+    println("The original equations set is not homogeneous.")
 end
 
+# The number of unknowns
+n = size(A,2)
 # The rank of coefficient term matrix
 Ra = rank(A)
 # Calculate the value of determinant
 Da = det(A)
+
