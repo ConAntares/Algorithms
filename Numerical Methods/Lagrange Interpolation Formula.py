@@ -6,11 +6,14 @@ from scipy.interpolate import lagrange
 
 def lagrange_interpolate(x, y, t):
     p = lagrange(x, y)
-    u = p(t)
-    plt.plot(x, y, "bo")
-    plt.plot(t, u, "ro")
-    plt.show()
+    return p(t)
 
 x, y = np.loadtxt('Numerical Methods/Data/data02.dat', unpack=True)
 t = np.linspace(1, 2, 10)
-lagrange_interpolate(x, y, t)
+u = lagrange_interpolate(x, y, t)
+
+plt.rcParams['font.family'] = 'CMU Serif'
+plt.plot(t, u, "P", c="#00B4DC", alpha=0.9)
+plt.plot(x, y, "o", c="#32B432", alpha=0.9)
+plt.tick_params(direction='in')
+plt.show()
