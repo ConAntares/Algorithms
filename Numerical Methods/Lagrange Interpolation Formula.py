@@ -7,7 +7,6 @@ from scipy.interpolate import lagrange
 def lagrange_interpolate(x, y, t):
     p = lagrange(x, y)
     u = p(t)
-
     plt.plot(x, y, "bo")
     plt.plot(t, u, "ro")
     plt.show()
