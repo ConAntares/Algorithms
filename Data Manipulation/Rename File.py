@@ -1,5 +1,9 @@
 #### Rename File with Ctrl+H
 
+"""
+Subfolders are not included
+"""
+
 import os
 
 def files():
