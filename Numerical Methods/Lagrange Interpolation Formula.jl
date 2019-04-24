@@ -1,0 +1,31 @@
+#### Lagrange Interpolation Formula
+
+using DelimitedFiles
+using Plots; pyplot()
+
+function lagrange_interpolate(X,Y,t)
+    C = ones(length(X))
+    d = 0.0
+    for i = 1:length(X)
+        for j = [1:i-1;i+1:length(X)]
+            C[i] = C[i]*(t-X[j])/(X[i]-X[j])
+        end
+        d = d + Y[i] * C[i]
+    end
+    return d
+end
+
+function lagrange_interpolate_plus(X,Y,t)
+    idxs = eachindex(X)
+    sum(Y[i] * prod((t-X[j])/(X[i]-X[j]) for j in idxs if j != i) for i in idxs)
+end
+
+A = readdlm("Numerical Methods/Data/data02.dat")
+X = view(A,:,1)
+Y = view(A,:,2)
+T = 1.0:0.1:2.0
+U = [lagrange_interpolate(X, Y, t) for t in T]
+
+plot([X;T],[Y;U])
+
+# savefig("U.pdf")
