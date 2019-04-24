@@ -1,5 +1,7 @@
 #### Array in Python
 
+#%% Data
+
 ## Data Types
 """
 dtype   Variants    Description
@@ -32,7 +34,6 @@ ntype       The data type of the elements in this array.
 nbytes      Number of bytes used to store the data.
 """
 
-#%%
 import numpy as np
 
 data = np.array([[1,1+4j],[4+9j,9+16j],[16+25j,25]],dtype=np.complex64)
@@ -58,7 +59,9 @@ data.imag
     #        [ 9., 16.],
     #        [25.,  0.]], dtype=float32)
 
-## Summary of NumPy functions for generating arrays
+
+#%% Summary of NumPy functions for generating arrays
+
 """
 np.array:
     Creates an array for which the elements are given by an array-like object, which,
@@ -92,7 +95,6 @@ np.random.rand:
     Other types of distributions are also available in the np.random module.
 """
 
-#%%
 import numpy as np
 
 A = np.array([[1,2,3,4],[5,6,7,8]])
@@ -107,13 +109,13 @@ A.shape[1]  # 4
 # Control the Print Precision, we can use: np.set_printoptions(precision=8)
 # Control the Scientific Counting, we can use: np.set_printoptions(suppress=False)
 
-## Arrays Filled with Constant Value
+#%% Arrays Filled with Constant Value
+
 """
     The functions np.zeros and np.ones create and return arrays filled with zeros and ones, respectively.
 They take, as first argument, an integer or a tuple that describes the number of elements along each dimension of the array.
 For example, to create a 2×3 array filled with zeros, and an array of length 4 filled with ones.
 """
-#%%
 import numpy as np
 
 np.zeros((2,2))
