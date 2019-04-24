@@ -9,7 +9,7 @@ def lagrange_interpolate(x, y, t):
     return p(t)
 
 x, y = np.loadtxt('Numerical Methods/Data/data02.dat', unpack=True)
-t = np.linspace(1, 2, 10)
+t = np.linspace(1, 2, 11)
 u = lagrange_interpolate(x, y, t)
 
 plt.rcParams['font.family'] = 'CMU Serif'
