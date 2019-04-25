@@ -26,6 +26,10 @@ Y = view(A,:,2)
 T = 1.0:0.1:2.0
 U = [lagrange_interpolate(X, Y, t) for t in T]
 
-plot([X;T],[Y;U])
+plot(fontfamily=("CMU Serif"),dpi=512)
+scatter!(T,U,color="#00B4DC",marker=(:cross,10,Plots.stroke(:white)),label="Foreast")
+scatter!(X,Y,color="#32B432",marker=(:circle,10,Plots.stroke(:white)),label="Source")
+
+
 
 # savefig("U.pdf")
