@@ -10,7 +10,7 @@ function lagrange_interpolate(X,Y,t)
         for j = [1:i-1;i+1:length(X)]
             C[i] = C[i]*(t-X[j])/(X[i]-X[j])
         end
-        d = d + Y[i] * C[i]
+        d = d + Y[i]*C[i]
     end
     return d
 end
@@ -29,7 +29,5 @@ U = [lagrange_interpolate(X, Y, t) for t in T]
 plot(fontfamily=("CMU Serif"),dpi=512)
 scatter!(T,U,color="#00B4DC",marker=(:cross,10,Plots.stroke(:white)),label="Foreast")
 scatter!(X,Y,color="#32B432",marker=(:circle,10,Plots.stroke(:white)),label="Source")
-
-
 
 # savefig("U.pdf")
