@@ -71,7 +71,7 @@ end
 
 ## Fibonacci Sequence in Array
 
-N = 1:1:100
+N = 1:1:20
 M = [fib1(n) for n in N]
 
 @timev(M1 = [fib1(n) for n in N])
