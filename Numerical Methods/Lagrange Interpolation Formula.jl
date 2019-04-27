@@ -3,6 +3,8 @@
 using DelimitedFiles
 using Plots; pyplot()
 
+to = time()
+
 function lagrange_interpolate(X,Y,t)
     C = ones(length(X))
     d = 0.0
@@ -24,7 +26,10 @@ A = readdlm("Numerical Methods/Data/data02.dat")
 X = view(A,:,1)
 Y = view(A,:,2)
 T = 1.0:0.1:2.0
-U = [lagrange_interpolate(X, Y, t) for t in T]
+U = [lagrange_interpolate_plus(X, Y, t) for t in T]
+
+td = time() - to
+println("The time interval is $td s.")
 
 plot(fontfamily=("CMU Serif"),dpi=512)
 scatter!(T,U,color="#00B4DC",marker=(:cross,10,Plots.stroke(:white)),label="Foreast")
