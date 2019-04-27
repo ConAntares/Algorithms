@@ -31,7 +31,7 @@ U = [lagrange_interpolate_plus(X, Y, t) for t in T]
 td = time() - to
 println("The time interval is $td s.")
 
-plot(fontfamily=("CMU Serif"),dpi=512)
+plot(fontfamily=("Serif"),dpi=512)
 scatter!(T,U,color="#00B4DC",marker=(:cross,10,Plots.stroke(:white)),label="Foreast")
 scatter!(X,Y,color="#32B432",marker=(:circle,10,Plots.stroke(:white)),label="Source")
 
