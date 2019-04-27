@@ -10,10 +10,8 @@ f(n) =  1                   (n = 1)
 
 using Plots; pyplot()
 
-function fib1(n::Int64)
-    a = 1
-    b = 1
-    c = 1
+function fib1(n::BigInt)
+    a = b = c = BigInt(1)
     if n <= 0
         throw(DomainError(n, "Please input a positive integer."))
         return -1
@@ -27,10 +25,8 @@ function fib1(n::Int64)
     return c
 end
 
-function fib2(n::Int64)
-    a = 1
-    b = 1
-    c = 1
+function fib2(n::BigInt)
+    a = b = c = BigInt(1)
     if n <= 0
         throw(DomainError(n, "Please input a positive integer."))
         return -1
@@ -43,7 +39,7 @@ function fib2(n::Int64)
     return c
 end
 
-function fib3(n::Int64)
+function fib3(n::BigInt)
     if n <= 0
         throw(DomainError(n, "Please input a positive integer."))
         return -1
@@ -54,7 +50,7 @@ function fib3(n::Int64)
     end
 end
 
-function fib4(n::Int64)
+function fib4(n::BigInt)
     if n <= 0
         throw(DomainError(n, "Please input a positive integer."))
         return -1
@@ -65,26 +61,23 @@ function fib4(n::Int64)
 end
 
 println("Please input a positive integer.")
-number = parse(Int64, chomp(readline()))
-to = time()
+number = parse(BigInt, chomp(readline()))
 
 re = fib1(number)
 
 if re != -1
     println("The fibonacci sequence of $number is $re.")
 end
-td = time() - to
-println("The time interval is $td s.")
 
 ## Fibonacci Sequence in Array
-
-to = time()
 
 N = 1:1:100
 M = [fib1(n) for n in N]
 
-td = time() - to
-print("The time interval is $td s.")
+@timev(M1 = [fib1(n) for n in N])
+# @timev(M2 = [fib2(n) for n in N])
+# @timev(M3 = [fib3(n) for n in N])
+# @timev(M4 = [fib4(n) for n in N])
 
 plot(fontfamily=("Serif"),dpi=1024)
 plot!(N,M,color="#00B4DC",label="Fibonacci Sequence")
