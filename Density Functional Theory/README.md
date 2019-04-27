@@ -1,4 +1,4 @@
-# Algorithms for Quantum Mechanics
+# Density Functional Theory
 
 [![LGPL 3.0 License](https://github.com/ConAntares/About/blob/master/Attachments/LicenseLGPL3.0.svg)](https://www.gnu.org/licenses/lgpl-3.0)
 [![Made by Python](https://github.com/ConAntares/About/blob/master/Attachments/MadebyPython.svg)](https://www.python.org/)
@@ -9,8 +9,4 @@
 
 ## Reference
 
-Ramamurti Shankar, Principles of Quantum Mechanics 2nd Edition, Springer, 2010.
-
-Franz Schwabl, Quantum Mechanics, Springer, 2009.
-
-Franz Schwabl, Advanced Quantum Mechanics, Springer, 2010.
+David S. Sholl, Janice A. Steckel, Density Functional Theory, WILEY, 2009.

@@ -1,4 +1,4 @@
-# Algorithms for Quantum Mechanics
+# Algorithms for Statistical Mechanics
 
 [![LGPL 3.0 License](https://github.com/ConAntares/About/blob/master/Attachments/LicenseLGPL3.0.svg)](https://www.gnu.org/licenses/lgpl-3.0)
 [![Made by Python](https://github.com/ConAntares/About/blob/master/Attachments/MadebyPython.svg)](https://www.python.org/)
@@ -9,8 +9,8 @@
 
 ## Reference
 
-Ramamurti Shankar, Principles of Quantum Mechanics 2nd Edition, Springer, 2010.
+Franz Schwabl, Statistical Mechanics, Springer, 2006.
 
-Franz Schwabl, Quantum Mechanics, Springer, 2009.
+Mehran Kardar, Statistical Physics of Particles, Cambridge University Press, 2007.
 
-Franz Schwabl, Advanced Quantum Mechanics, Springer, 2010.
+Mehran Kardar, Statistical Physics of Fields, Cambridge University Press, 2007.
