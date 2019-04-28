@@ -1,3 +1,5 @@
+#### My Colormap
+
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
@@ -5,6 +7,7 @@ import sympy
 from matplotlib.colors import LinearSegmentedColormap
 
 ## Lines Colors
+
 myBlack     = "#282828" # 040,040,040
 myGary      = "#B4B4B4" # 180,180,180
 myRed       = "#F0140A" # 240,020,010
@@ -23,6 +26,7 @@ myPink      = "#DC64C8" # 220,100,200
 myBrown     = "#8C5A50" # 140,090,080
 
 ## IR CA Color Map
+
 irca = {'red':  ((0.0,  15/255,  15/255),
                  (0.1,  25/255,  25/255),
                  (0.2,  10/255,  10/255),
