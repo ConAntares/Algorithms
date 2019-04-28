@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import axes3d
-# from Luke_Color import *
+# from IRCA import *
 
 ## Global Setting
 
