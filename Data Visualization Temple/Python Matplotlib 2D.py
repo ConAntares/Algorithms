@@ -43,8 +43,8 @@ line,= plt.plot(x, y, color='Black', lw='1', alpha=1, antialiased=True)
 x, y = np.loadtxt('Data/data32.dat', unpack=True)
 line,= plt.plot(x, y, color='Black', lw='1', alpha=1, antialiased=True)
 
-# x, y = np.loadtxt('Data/data40.dat', unpack=True)
-# line,= plt.plot(x, y, color='Black', lw='1', alpha=1, antialiased=True)
+x, y = np.loadtxt('Data/data40.dat', unpack=True)
+line,= plt.plot(x, y, color='Black', lw='1', alpha=1, antialiased=True)
 
 ## Figure Output
 
