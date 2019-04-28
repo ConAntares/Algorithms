@@ -3,17 +3,16 @@
 import numpy as np
 import matplotlib as mpl
 import matplotlib.pyplot as plt
-from matplotlib import rc
-from matplotlib import rcParams
 from mpl_toolkits.mplot3d import axes3d
 # from Luke_Color import *
 
 ## Global Setting
 
-plt.rcParams['font.size']           = '12'
+plt.rc('font', **{'family':'serif','serif':['Computer Modern']})
+plt.rc('text', usetex = True)
+
 plt.rcParams['grid.color']          = '#D4D4D4'
 plt.rcParams['grid.linestyle']      = 'dashed'
-plt.rcParams['text.usetex']         = True 
 
 formatter = mpl.ticker.ScalarFormatter(useMathText = True)
 formatter.set_scientific(True) 
@@ -23,6 +22,11 @@ formatter.set_powerlimits((-1,1))
 
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
+
+## Title
+
+fig.suptitle(r"SupTitle with \LaTeX", size=18, color='black')
+ax.set_title(r"SubTitle with \LaTeX", size=16, color='black')
 
 ## Data Input
 
@@ -58,9 +62,9 @@ ax.set_proj_type('persp')                   # 'ortho': Orthographic; 'persp': Pe
 ax.grid(True)
 ax.set_axis_on()
 
-## Output
+## Figure Output
 
-fig.savefig("3D Wire.pdf", dpi=1080)
+# fig.savefig("Python Matplotlib 3D.pdf", dpi=1080)
 plt.show()
 
 ## More Information
