@@ -13,11 +13,9 @@ from mpl_toolkits.mplot3d import axes3d
 plt.rcParams['font.size']           = '12'
 plt.rcParams['grid.color']          = '#D4D4D4'
 plt.rcParams['grid.linestyle']      = 'dashed'
+plt.rcParams['text.usetex']         = True 
 
-rc('text', usetex = True)
-rc('font', **{'family': 'serif', 'serif': ['Computer Modern']})
-
-formatter = mpl.ticker.ScalarFormatter(useMathText=True)
+formatter = mpl.ticker.ScalarFormatter(useMathText = True)
 formatter.set_scientific(True) 
 formatter.set_powerlimits((-1,1))
 

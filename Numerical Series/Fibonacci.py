@@ -64,20 +64,18 @@ print("The time interval is %f s." %td)
 
 to = time.time()
 
-N = np.arange(1,101,1)
+N = np.arange(1,41,1)
 M = np.array(list(map(fib,N)))
 
 td = time.time() - to
 print("The time interval is %f s." %td)
 
-fig, ax = plt.subplots(1, 1)
-## Scientific Notation in Matplotlib
-# formatter = ticker.ScalarFormatter(useMathText=True) 
-# formatter.set_scientific(False)
-# formatter.set_powerlimits((-1,1))
-# ax.yaxis.set_major_formatter(formatter) 
+## Plot
+
 plt.rcParams['font.family'] = 'CMU Serif'
-plt.semilogy(N, M, c="#00B4DC", alpha=0.9)
+plt.rcParams['text.usetex'] = True
+fig, ax = plt.subplots(1, 1)
+plt.plot(N, M, c="#00B4DC", alpha=0.9)
 plt.tick_params(direction='in')
 
 plt.show()
