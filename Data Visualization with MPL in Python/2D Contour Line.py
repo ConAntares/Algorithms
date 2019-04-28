@@ -9,11 +9,13 @@ import sympy
 from Luke_Color import *
 
 # Global Setting
-plt.rcParams['font.family'] = 'CMU Serif'           # Require CMU Serif font file: cmr10.tff
+
+plt.rcParams['font.family'] = 'CMU Serif'       # Require CMU Serif font file: cmr10.tff
 plt.rcParams['font.size'] = '14'                # Font Size
 plt.rcParams['mathtext.fontset'] = 'cm'         # cm: Computer Mathematics
-plt.rcParams['mathtext.rm'] = 'CMU Serif'           # Require CMU Serif font file: cmr10.tff
+plt.rcParams['mathtext.rm'] = 'CMU Serif'       # Require CMU Serif font file: cmr10.tff
 plt.rcParams['text.usetex'] = True              # Require TeX environment
+
 formatter = mpl.ticker.ScalarFormatter(useMathText=True)
 formatter.set_scientific(True) 
 formatter.set_powerlimits((-1,1))
@@ -23,6 +25,7 @@ fig.suptitle('SupTitle', size=18, color='black')
 ax.set_title("SubTitle", size=16, color='black')
 
 ## Function or Data
+
 delta = 0.01
 x = np.arange(-4.0, 4.0, delta)
 y = np.arange(-4.0, 4.0, delta)
@@ -33,6 +36,8 @@ Z = (Z1-Z2)*2
 
 CS = ax.contour(X, Y, Z ,cmap=ircal)
 plt.clabel(CS, inline=1, fontsize=10)
+
+## Outpot
 
 fig.savefig("2D Contour Line Py.pdf", dpi=1080)
 plt.show()
