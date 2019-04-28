@@ -11,7 +11,7 @@ f(n) =  1                   (n = 1)
 using Plots; pyplot()
 
 function fib1(n::BigInt)
-    a = b = c = BigInt(1)
+    a = b = c = 1
     if n <= 0
         throw(DomainError(n, "Please input a positive integer."))
         return -1
@@ -26,7 +26,7 @@ function fib1(n::BigInt)
 end
 
 function fib2(n::BigInt)
-    a = b = c = BigInt(1)
+    a = b = c = 1
     if n <= 0
         throw(DomainError(n, "Please input a positive integer."))
         return -1
@@ -74,7 +74,7 @@ end
 N = 1:1:20
 M = [fib1(n) for n in N]
 
-@timev(M1 = [fib1(n) for n in N])
+# @timev(M1 = [fib1(n) for n in N])
 # @timev(M2 = [fib2(n) for n in N])
 # @timev(M3 = [fib3(n) for n in N])
 # @timev(M4 = [fib4(n) for n in N])

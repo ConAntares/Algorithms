@@ -2,8 +2,8 @@
 
 using Plots; pyplot()
 
-function fac1(n::BigInt)
-    o = r = BigInt(1)
+function fac1(n)
+    o = r = 1
     if n < 0
         throw(DomainError(n, "Please input a positive integer."))
         return -1
@@ -17,8 +17,8 @@ function fac1(n::BigInt)
     return r
 end
 
-function fac2(n::BigInt)
-    o = r = BigInt(1)
+function fac2(n)
+    o = r = 1
     if n < 0
         throw(DomainError(n, "Please input a positive integer."))
         return -1
