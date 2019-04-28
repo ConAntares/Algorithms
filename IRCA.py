@@ -1,4 +1,4 @@
-#### My Colormap: Photonica
+#### My Colormap: IRCA
 
 import matplotlib as mpl
 import matplotlib.pyplot as plt
