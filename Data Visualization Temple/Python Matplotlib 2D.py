@@ -28,20 +28,23 @@ ax.set_title(r"SubTitle with \LaTeX", size=16, color='black')
 
 ## Data Input
 
-x, y = np.loadtxt('Data/data01.dat', unpack=True)
+x, y = np.loadtxt('Data/data00.dat', unpack=True)
 line,= plt.plot(x, y, color='Black', lw='1', alpha=1, antialiased=True)
 
-x, y = np.loadtxt('Data/data02.dat', unpack=True)
+x, y = np.loadtxt('Data/data08.dat', unpack=True)
 line,= plt.plot(x, y, color='Black', lw='1', alpha=1, antialiased=True)
 
-x, y = np.loadtxt('Data/data05.dat', unpack=True)
+x, y = np.loadtxt('Data/data16.dat', unpack=True)
 line,= plt.plot(x, y, color='Black', lw='1', alpha=1, antialiased=True)
 
-x, y = np.loadtxt('Data/data07.dat', unpack=True)
+x, y = np.loadtxt('Data/data24.dat', unpack=True)
 line,= plt.plot(x, y, color='Black', lw='1', alpha=1, antialiased=True)
 
-x, y = np.loadtxt('Data/data09.dat', unpack=True)
+x, y = np.loadtxt('Data/data32.dat', unpack=True)
 line,= plt.plot(x, y, color='Black', lw='1', alpha=1, antialiased=True)
+
+# x, y = np.loadtxt('Data/data40.dat', unpack=True)
+# line,= plt.plot(x, y, color='Black', lw='1', alpha=1, antialiased=True)
 
 ## Figure Output
 

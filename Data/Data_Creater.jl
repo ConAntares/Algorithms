@@ -1,5 +1,5 @@
 # the Domain of definition
-D = range(0,stop=1,step=0.1)
+D = range(0, stop=1, step=0.01)
 
 F = open("data00.dat","w")
 for x in D
@@ -298,6 +298,38 @@ for x in D
 end
 close(F)
 
+F = open("data37.dat","w")
+for x in D
+    y37 = (1/2)*(-cos(3*x+3.3)+1)
+    println(x,"\t",y37)
+    write(F,join([x,"\t",y37,"\n"]))
+end
+close(F)
+
+F = open("data38.dat","w")
+for x in D
+    y38 = (1/2)*(-cos(3*x+3.3)+1)
+    println(x,"\t",y38)
+    write(F,join([x,"\t",y38,"\n"]))
+end
+close(F)
+
+F = open("data39.dat","w")
+for x in D
+    y39 = (1/2)*(-cos(3*x+3.9)+1)
+    println(x,"\t",y39)
+    write(F,join([x,"\t",y39,"\n"]))
+end
+close(F)
+
+F = open("data40.dat","w")
+for x in D
+    y40 = (1/2)*(-cos(3*x+4.0)+1)
+    println(x,"\t",y40)
+    write(F,join([x,"\t",y40,"\n"]))
+end
+close(F)
+
 F = open("dataTot.dat","w")
 for x in D
     y0  = (1/2)*(-cos(3*x+0.0)+1)
@@ -337,6 +369,10 @@ for x in D
     y34 = (1/2)*(-cos(3*x+3.4)+1)
     y35 = (1/2)*(-cos(3*x+3.5)+1)
     y36 = (1/2)*(-cos(3*x+3.6)+1)
+    y37 = (1/2)*(-cos(3*x+3.7)+1)
+    y38 = (1/2)*(-cos(3*x+3.8)+1)
+    y39 = (1/2)*(-cos(3*x+3.9)+1)
+    y40 = (1/2)*(-cos(3*x+4.0)+1)
     println(x)
     write(F,join([  x,"\t",
                     y0,"\t",
@@ -375,5 +411,9 @@ for x in D
                     y33,"\n",
                     y34,"\n",
                     y35,"\n",
-                    y36,"\n"    ]))
+                    y36,"\n",
+                    y37,"\n",
+                    y38,"\n",
+                    y39,"\n",
+                    y40,"\n"    ]))
 end
