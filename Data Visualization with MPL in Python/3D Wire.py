@@ -1,41 +1,71 @@
+#### 3d Plot with Matplotlib in Python
+
+import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
-from mpl_toolkits.mplot3d import axes3d
+from matplotlib import rc
 from matplotlib import rcParams
-from Luke_Color import *
+from matplotlib.ticker import MultipleLocator
+from mpl_toolkits.mplot3d import axes3d
+# from Luke_Color import *
 
-# Global Setting
-plt.rcParams['font.family'] = 'CMU Serif'
-#plt.rcParams['font.size'] = '14'               # Font Size
-plt.rcParams['mathtext.fontset'] = 'cm'         # cm: Computer Mathematics
-plt.rcParams['mathtext.rm'] = 'CMU Serif'       # Require CMU Serif font file
-#plt.rcParams['grid.color'] = '#E1E1E1'
-plt.rcParams['grid.color'] = '#F0F0F0'
-plt.rcParams['grid.linestyle'] = 'solid'
-plt.rcParams['text.usetex'] = True              # Require TeX environment
+## Global Setting
+
+plt.rcParams['font.size']           = '12'
+plt.rcParams['grid.color']          = '#D4D4D4'
+plt.rcParams['grid.linestyle']      = 'dashed'
+
+rc('text', usetex = True)
+rc('font', **{'family': 'serif', 'serif': ['Computer Modern']})
+
 formatter = mpl.ticker.ScalarFormatter(useMathText=True)
 formatter.set_scientific(True) 
 formatter.set_powerlimits((-1,1))
 
-plt.rc('axes',edgecolor='green')
+## Plot Statement
 
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
+
+## Data Input
 
 X, Y, Z = axes3d.get_test_data(0.05)
 
 ax.plot_wireframe(X, Y, Z, rstride=10, cstride=10)
 
+## Ticks and Axes
+
+ax.xaxis._axinfo['tick']['inward_factor'] = 0.0
+ax.xaxis._axinfo['tick']['outward_factor'] = 0.2
+ax.yaxis._axinfo['tick']['inward_factor'] = 0.0
+ax.yaxis._axinfo['tick']['outward_factor'] = 0.2
+ax.zaxis._axinfo['tick']['inward_factor'] = 0.0
+ax.zaxis._axinfo['tick']['outward_factor'] = 0.2
+
+ax.xaxis.pane.set_edgecolor('#D0D0D0')
+ax.yaxis.pane.set_edgecolor('#D0D0D0')
+ax.zaxis.pane.set_edgecolor('#D0D0D0')
+ax.xaxis.pane.set_alpha(1)
+ax.yaxis.pane.set_alpha(1)
+ax.zaxis.pane.set_alpha(1)
+
 ax.xaxis.pane.fill = False
 ax.yaxis.pane.fill = False
 ax.zaxis.pane.fill = False
-ax.set_proj_type('ortho')                   # 'ortho': Orthographic; 'persp': Perspective(default)
-#ax.set_axis_off()
-ax.set_axis_on()
-ax.grid(True)
 
-# fig.savefig("3D Line Py.pdf", dpi=1080)
+ax.invert_xaxis()
+ax.invert_yaxis()
+ax.invert_zaxis()
+
+ax.set_proj_type('persp')                   # 'ortho': Orthographic; 'persp': Perspective(default)
+ax.grid(True)
+ax.set_axis_on()
+
+## Output
+
+fig.savefig("3D Wire.pdf", dpi=1080)
 plt.show()
 
-### More Information ###
+## More Information
+
 # https://matplotlib.org
