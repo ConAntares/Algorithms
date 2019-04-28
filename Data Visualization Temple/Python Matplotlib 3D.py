@@ -1,4 +1,4 @@
-#### 3d Plot with Matplotlib in Python
+#### 3D Plot with Matplotlib in Python
 
 import numpy as np
 import matplotlib as mpl
