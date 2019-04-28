@@ -34,7 +34,7 @@ ax.set_proj_type('ortho')                   # 'ortho': Orthographic; 'persp': Pe
 ax.set_axis_on()
 ax.grid(True)
 
-fig.savefig("3D Line Py.pdf", dpi=1080)
+# fig.savefig("3D Line Py.pdf", dpi=1080)
 plt.show()
 
 ### More Information ###
