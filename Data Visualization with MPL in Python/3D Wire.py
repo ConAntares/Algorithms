@@ -1,11 +1,10 @@
 #### 3d Plot with Matplotlib in Python
 
+import numpy as np
 import matplotlib as mpl
 import matplotlib.pyplot as plt
-import numpy as np
 from matplotlib import rc
 from matplotlib import rcParams
-from matplotlib.ticker import MultipleLocator
 from mpl_toolkits.mplot3d import axes3d
 # from Luke_Color import *
 
