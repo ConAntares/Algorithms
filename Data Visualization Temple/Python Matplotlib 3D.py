@@ -30,9 +30,9 @@ ax.set_title(r"SubTitle with \LaTeX", size=16, color="black")
 
 ## Data Input
 
-X, Y, Z = axes3d.get_test_data(0.05)
+x, y, z = np.loadtxt("Data/dataTot.dat", unpack=True)
 
-ax.plot_wireframe(X, Y, Z, rstride=10, cstride=10)
+surf = ax.plot_trisurf(x, y, z, cmap="gnuplot")
 
 ## Ticks and Axes
 

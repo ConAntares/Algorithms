@@ -10,7 +10,7 @@ f(n) =  1                   (n = 1)
 
 using Plots; pyplot()
 
-function fib1(n::BigInt)
+function fib1(n)
     a = b = c = 1
     if n <= 0
         throw(DomainError(n, "Please input a positive integer."))
@@ -25,7 +25,7 @@ function fib1(n::BigInt)
     return c
 end
 
-function fib2(n::BigInt)
+function fib2(n)
     a = b = c = 1
     if n <= 0
         throw(DomainError(n, "Please input a positive integer."))
@@ -39,7 +39,7 @@ function fib2(n::BigInt)
     return c
 end
 
-function fib3(n::BigInt)
+function fib3(n)
     if n <= 0
         throw(DomainError(n, "Please input a positive integer."))
         return -1
@@ -50,7 +50,7 @@ function fib3(n::BigInt)
     end
 end
 
-function fib4(n::BigInt)
+function fib4(n)
     if n <= 0
         throw(DomainError(n, "Please input a positive integer."))
         return -1
