@@ -8,11 +8,11 @@ from mpl_toolkits.mplot3d import axes3d
 
 ## Global Setting
 
-plt.rc('font', **{'family':'serif','serif':['Computer Modern']})
-plt.rc('text', usetex = True)
+plt.rc("font", **{"size":14,"family":"serif","serif":["Computer Modern"]})
+plt.rc("text", usetex = True)
 
-plt.rcParams['grid.color']          = '#D4D4D4'
-plt.rcParams['grid.linestyle']      = 'dashed'
+plt.rcParams["grid.color"]          = "#D4D4D4"
+plt.rcParams["grid.linestyle"]      = "dashed"
 
 formatter = mpl.ticker.ScalarFormatter(useMathText = True)
 formatter.set_scientific(True) 
@@ -21,12 +21,12 @@ formatter.set_powerlimits((-1,1))
 ## Plot Statement
 
 fig = plt.figure()
-ax = fig.add_subplot(111, projection='3d')
+ax = fig.add_subplot(111, projection="3d")
 
 ## Title
 
-fig.suptitle(r"SupTitle with \LaTeX", size=18, color='black')
-ax.set_title(r"SubTitle with \LaTeX", size=16, color='black')
+fig.suptitle(r"SupTitle with \LaTeX", size=18, color="black")
+ax.set_title(r"SubTitle with \LaTeX", size=16, color="black")
 
 ## Data Input
 
@@ -36,16 +36,16 @@ ax.plot_wireframe(X, Y, Z, rstride=10, cstride=10)
 
 ## Ticks and Axes
 
-ax.xaxis._axinfo['tick']['inward_factor'] = 0.0
-ax.xaxis._axinfo['tick']['outward_factor'] = 0.2
-ax.yaxis._axinfo['tick']['inward_factor'] = 0.0
-ax.yaxis._axinfo['tick']['outward_factor'] = 0.2
-ax.zaxis._axinfo['tick']['inward_factor'] = 0.0
-ax.zaxis._axinfo['tick']['outward_factor'] = 0.2
+ax.xaxis._axinfo["tick"]["inward_factor"] = 0.0
+ax.xaxis._axinfo["tick"]["outward_factor"] = 0.2
+ax.yaxis._axinfo["tick"]["inward_factor"] = 0.0
+ax.yaxis._axinfo["tick"]["outward_factor"] = 0.2
+ax.zaxis._axinfo["tick"]["inward_factor"] = 0.0
+ax.zaxis._axinfo["tick"]["outward_factor"] = 0.2
 
-ax.xaxis.pane.set_edgecolor('#D0D0D0')
-ax.yaxis.pane.set_edgecolor('#D0D0D0')
-ax.zaxis.pane.set_edgecolor('#D0D0D0')
+ax.xaxis.pane.set_edgecolor("#D0D0D0")
+ax.yaxis.pane.set_edgecolor("#D0D0D0")
+ax.zaxis.pane.set_edgecolor("#D0D0D0")
 ax.xaxis.pane.set_alpha(1)
 ax.yaxis.pane.set_alpha(1)
 ax.zaxis.pane.set_alpha(1)
@@ -58,7 +58,7 @@ ax.invert_xaxis()
 ax.invert_yaxis()
 ax.invert_zaxis()
 
-ax.set_proj_type('persp')                   # 'ortho': Orthographic; 'persp': Perspective(default)
+ax.set_proj_type("persp")                   # "ortho": Orthographic; "persp": Perspective(default)
 ax.grid(True)
 ax.set_axis_on()
 
