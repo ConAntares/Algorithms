@@ -30,7 +30,7 @@ ax.set_title(r"SubTitle with \LaTeX", size=16, color="black")
 
 ## Data Input
 
-x, y, z = np.loadtxt("Data/dataTot.dat", unpack=True)
+x, y, z = np.loadtxt("Data/dataTov.dat", unpack=True, )
 
 surf = ax.plot_trisurf(x, y, z, cmap="gnuplot")
 
