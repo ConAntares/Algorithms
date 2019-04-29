@@ -30,9 +30,8 @@ ax.set_title(r"SubTitle with \LaTeX", size=16, color="black")
 
 ## Data Input
 
-x, y, z = np.loadtxt("Data/dataTov.dat", unpack=True, )
-
-surf = ax.plot_trisurf(x, y, z, cmap="gnuplot")
+x, y, z = np.loadtxt("Data/dataTov.dat", unpack=True)
+surf = ax.plot_trisurf(x, y, z, cmap="gnuplot", antialiased=False)
 
 ## Ticks and Axes
 
@@ -64,7 +63,8 @@ ax.set_axis_on()
 
 ## Figure Output
 
-# fig.savefig("Python Matplotlib 3D.pdf", dpi=1080)
+# fig.savefig("Python Matplotlib 3D.pdf", dpi=512)
+# fig.savefig("Python Matplotlib 3D.png", dpi=512)
 plt.show()
 
 ## More Information

@@ -64,7 +64,8 @@ plt.ylim(-0.05, 2.05)
 
 ## Figure Output
 
-# fig.savefig("Python Matplotlib 2D.pdf", dpi=1080)
+# fig.savefig("Python Matplotlib 2D.pdf", dpi=512)
+# fig.savefig("Python Matplotlib 2D.png", dpi=512)
 plt.show()
 
 ## More Information
