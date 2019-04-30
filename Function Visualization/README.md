@@ -9,4 +9,3 @@
 ![Open Source](https://github.com/ConAntares/About/blob/master/Attachments/OpenSource.svg)
 
 ## Reference
-
