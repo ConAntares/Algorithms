@@ -10,7 +10,7 @@ to = time.time()
 def coin(tot):
     toc      = tot + 1
     category = [1, 5 , 10, 20, 50, 100]
-    count    = np.zeros(toc,dtype=int)
+    count    = np.zeros(toc, dtype=int)
     count[0] = 1
     for i in category:
         for j in range(1,toc):      # 1 to tot
