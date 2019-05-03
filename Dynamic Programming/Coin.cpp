@@ -4,9 +4,9 @@
 
 using namespace std;
 
-int coin()
-{
+// int coin()
+// {
 
-}
+// }
 
 
