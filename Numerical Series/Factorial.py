@@ -49,7 +49,7 @@ print("The time interval is %f s." %td)
 
 # Factorial with math.factorial(x)
 
-number = int(input("Please input a positive integer. \n"))
+number = int(input("Please input a positive integer. \t\n"))
 to = time.time()
 
 re = math.factorial(number)
