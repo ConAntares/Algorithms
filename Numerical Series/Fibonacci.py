@@ -6,7 +6,7 @@ f(n) =  1                   (n = 1)
         f(n-1) + f(n-2)     (n > 2)
 """
 
-## Fibonacci With Iteration
+#%%  Fibonacci With Iteration
 
 import time
 import numpy as np
@@ -39,7 +39,7 @@ tf = time.time()
 td = tf - to
 print("Fibonacci With Iteration: The time interval is %f s." %td)
 
-## Fibonacci With Recursion
+#%%  Fibonacci With Recursion
 
 number = int(input("Please input a positive integer. \n"))
 to = time.time()
@@ -60,7 +60,7 @@ tf = time.time()
 td = tf - to
 print("Fibonacci With Recursion: The time interval is %f s." %td)
 
-## Fibonacci Sequence in Array
+#%%  Fibonacci Sequence in Array
 
 to = time.time()
 
@@ -71,7 +71,7 @@ M = np.array(list(map(fib,N)))
 td = time.time() - to
 print("Fibonacci Sequence in Array: The time interval is %f s." %td)
 
-## Fibonacci with Iterator
+#%% Fibonacci with Iterator
 
 to = time.time()
 # upLim = 20
@@ -101,7 +101,11 @@ T = np.arange(1, upLim+1)
 print(P)
 print(T)
 
-## Plot
+#%%  Plot
+
+upLim = 40
+N = np.arange(1,upLim+1,1)
+M = np.array(list(map(fib,N)))
 
 plt.rcParams['font.family'] = 'CMU Serif'
 plt.rcParams['text.usetex'] = True
