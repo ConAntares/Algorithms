@@ -11,12 +11,8 @@ This file is used to store the elementary fundamentals of Python, Julia, and Ten
 
 ## Reference
 
-[<img src="https://github.com/favicon.ico" width="48">](https://docs.python.org/3/)
-
-[![Numpy References](Logo/Numpy.png)](https://docs.scipy.org/doc/numpy/)
-
-[![Scipy References](Logo/Scipy.png)](https://docs.scipy.org/doc/scipy/)
-
-[![Julia Documentation](Logo/Julia.png)](https://docs.julialang.org/en/v1/)
-
-[![TensorFlow Tutorials](Logo/TensorFlow.png)](https://www.tensorflow.org/tutorials/)
+[<img src="Logo/Python.png" width="64">](https://docs.python.org/3/)
+[<img src="Logo/Numpy.png" width="64">](https://docs.scipy.org/doc/numpy/)
+[<img src="Logo/Scipy.png" width="64">](https://docs.scipy.org/doc/scipy/)
+[<img src="Logo/Julia.png" width="64">](https://docs.julialang.org/en/v1/)
+[<img src="Logo/TensorFlow.png" width="64">](https://www.tensorflow.org/tutorials/)
