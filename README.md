@@ -1,7 +1,6 @@
 # Algorithms
 
 [![LGPL 3.0 License](https://github.com/ConAntares/About/blob/master/Attachments/LicenseLGPL3.0.svg)](https://www.gnu.org/licenses/lgpl-3.0)
-[![Made by C++](https://github.com/ConAntares/About/blob/master/Attachments/MadebyCpp.svg)](https://en.wikipedia.org/wiki/C%2B%2B)
 [![Made by Python](https://github.com/ConAntares/About/blob/master/Attachments/MadebyPython.svg)](https://www.python.org/)
 [![Made by Julia](https://github.com/ConAntares/About/blob/master/Attachments/MadebyJulia.svg)](https://julialang.org/)
 [![Made by Jupyter](https://github.com/ConAntares/About/blob/master/Attachments/MadebyJupyter.svg)](https://jupyter.org/)
