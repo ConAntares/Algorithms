@@ -11,7 +11,7 @@ This file is used to store the elementary fundamentals of Python, Julia, and Ten
 
 ## Reference
 
-[![Python References](Logo/Python.png)](https://docs.python.org/3/)
+[<img src="https://github.com/favicon.ico" width="48">](https://docs.python.org/3/)
 
 [![Numpy References](Logo/Numpy.png)](https://docs.scipy.org/doc/numpy/)
 
