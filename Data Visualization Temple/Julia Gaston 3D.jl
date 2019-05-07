@@ -1,1 +1,0 @@
-#### 3D Plot with Gaston in Julia
