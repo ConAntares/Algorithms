@@ -46,4 +46,4 @@ re = A .+ 2
 println(re)         # [3, 4, 5, 6]
 
 re = A * 2
-println(re)       # [2 4 6 8]
+println(re)         # [2, 4, 6, 8]
