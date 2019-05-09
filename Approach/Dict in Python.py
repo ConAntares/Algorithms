@@ -7,6 +7,11 @@ print(re)
     # {1: 1.1, 2: 2.2, 3: 3.3}
 print(type(re))
     # <class 'dict'>
+print(len(re))
+    # 4
+re[5] = 5.5
+print(re)
+    # {1: 1.1, 2: 2.2, 3: 3.3, 4: 4.4, 5: 5.5}
 
 re = {i:i**2 for i in np.arange(1,5,1)}
 print(re)
