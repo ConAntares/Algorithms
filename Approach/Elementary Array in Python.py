@@ -19,3 +19,9 @@ print(B)        # [0. 1. 2. 3. 4. 5. 6. 7. 8. 9.]
 
 C = np.array([0,1,2,3,4,5,6,7,8,9],dtype=np.float64)
 print(C)        # [0. 1. 2. 3. 4. 5. 6. 7. 8. 9.]
+
+D = np.arange(0,10,2)
+print(D)        # [0 2 4 6 8]
+
+E = np.linspace(0,10,6)
+print(E)        # [ 0.  2.  4.  6.  8. 10.]
