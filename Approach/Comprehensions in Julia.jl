@@ -1,7 +1,8 @@
 #### Comprehensions
 
 re = [i for i in 1:10]
-println(re)              # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+println(re)              
+    # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 re = [i*j for i in 1:4, j in 2:5]
 println(re)
@@ -27,3 +28,6 @@ println(re)
     #  10 13 16 19; 
     #  12 16 20 24]
 
+re = [i for i in 1:10 if i % 2 == 0]
+print(re)
+    # [2, 4, 6, 8, 10]
