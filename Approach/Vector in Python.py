@@ -55,3 +55,38 @@ print(re)       # [0 1 1 2]
 
 re = A % 2
 print(re)       # [1 0 1 0]
+
+re = A + B
+print(re)       # [ 1  4  7 10]
+
+re = A - B
+print(re)       # [ 1  0 -1 -2]
+
+re = A * B
+print(re)       # [ 0  4 12 24]
+
+re = A / B
+print(re)       # [       inf 1.         0.75       0.66666667]
+
+re = A // B
+print(re)       # [0 1 0 0]
+
+re = A % B
+print(re)       # [0 0 3 4]
+
+re = np.sum(A)
+print(re)       # 10
+
+A = np.matrix(A)
+B = np.matrix(B)
+
+re = np.dot(A,B.T)
+print(re)       # [[40]]
+
+re = np.dot(A.T,B)
+print(re)
+    # [[ 0  2  4  6]
+    #  [ 0  4  8 12]
+    #  [ 0  6 12 18]
+    #  [ 0  8 16 24]]
+
