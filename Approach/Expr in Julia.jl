@@ -17,3 +17,15 @@ println(re.args)
     # Any[:+, 1, 2]
 println(eval(re))
     # 3
+
+re = :(a = (1 + 2) * 3)
+println(re)
+    # a = (1 + 2) * 3
+println(eval(re))
+    # 9
+
+re = Expr(:call, :+, :1, :2)
+println(re)
+    # 1 + 2
+println(eval(re))
+    # 3
