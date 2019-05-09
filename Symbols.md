@@ -28,7 +28,7 @@ L̂ l̂, M̂ m̂, N̂ n̂, Ô ô, Ŝ ŝ, Ʃ̂ ʃ̂, T̂ t̂, Þ̂ þ̂, Û û, V
 
 ## Brackets
 
-(a), {b}, |c|, ‖d‖, ]e[, ⟨f⟩,
+(a), {b}, |c|, ‖d‖, ]e[, [f], ⟨g⟩,
 
 ## Logical Symbols
 
