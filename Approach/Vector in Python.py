@@ -14,23 +14,44 @@ print(A.ndim)   # 1
 print(A.shape)  # (10,)
 print(A.nbytes) # 40
 
-B = np.float64(A)
-print(B)        # [0. 1. 2. 3. 4. 5. 6. 7. 8. 9.]
+re = np.float64(A)
+print(re)       # [0. 1. 2. 3. 4. 5. 6. 7. 8. 9.]
 
-C = np.array([0,1,2,3,4,5,6,7,8,9],dtype=np.float64)
-print(C)        # [0. 1. 2. 3. 4. 5. 6. 7. 8. 9.]
+re = np.array([0,1,2,3,4,5,6,7,8,9],dtype=np.float64)
+print(re)       # [0. 1. 2. 3. 4. 5. 6. 7. 8. 9.]
 
-D = np.arange(0,10,2)
-print(D)        # [0 2 4 6 8]
+re = np.arange(0,10,2)
+print(re)       # [0 2 4 6 8]
 
-E = np.linspace(0,10,6)
-print(E)        # [ 0.  2.  4.  6.  8. 10.]
+re = np.linspace(0,10,6)
+print(re)       # [ 0.  2.  4.  6.  8. 10.]
 
-F = np.zeros(10)
-print(F)        # [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+re = np.zeros(10)
+print(re)       # [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
 
-G = np.ones(10)
-print(G)        # [1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+re = np.ones(10)
+print(re)       # [1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
 
-H = np.random.random(4)
-print(H)        # [0.11097086 0.5790162  0.53776519 0.34051093]
+re = np.random.random(4)
+print(re)       # [0.11097086 0.5790162  0.53776519 0.34051093]
+
+A = np.array([1,2,3,4])
+B = np.array([0,2,4,6])
+
+re = A + 2
+print(re)       # [3 4 5 6]
+
+re = A * 2
+print(re)       # [2 4 6 8]
+
+re = A ** 2
+print(re)       # [ 1  4  9 16]
+
+re = A / 2
+print(re)       # [0.5 1.  1.5 2. ]
+
+re = A // 2
+print(re)       # [0 1 1 2]
+
+re = A % 2
+print(re)       # [1 0 1 0]
