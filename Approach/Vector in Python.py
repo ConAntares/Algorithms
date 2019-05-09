@@ -26,6 +26,9 @@ print(re)       # [0 2 4 6 8]
 re = np.linspace(0,10,6)
 print(re)       # [ 0.  2.  4.  6.  8. 10.]
 
+re = np.empty(10)
+print(re)       # [0. 1. 2. 3. 4. 5. 6. 7. 8. 9.]
+
 re = np.zeros(10)
 print(re)       # [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
 
