@@ -29,5 +29,7 @@ println(re)
     #  12 16 20 24]
 
 re = [i for i in 1:10 if i % 2 == 0]
-print(re)
+println(re)
     # [2, 4, 6, 8, 10]
+
+# Set
