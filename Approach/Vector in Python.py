@@ -80,6 +80,9 @@ print(re)       # [0 0 3 4]
 re = np.sum(A)
 print(re)       # 10
 
+re = np.sqrt(A)
+print(re)       # [1.         1.41421356 1.73205081 2.        ]
+
 A = np.matrix(A)
 B = np.matrix(B)
 
