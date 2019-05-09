@@ -47,3 +47,15 @@ println(re)         # [3, 4, 5, 6]
 
 re = A * 2
 println(re)         # [2, 4, 6, 8]
+
+re = A .* 2
+println(re)         # [2, 4, 6, 8]
+
+re = A .^ 2
+println(re)         # [1, 4, 9, 16]
+
+re = A + B
+println(re)         # [1, 4, 7, 10]
+
+re = A + B
+println(re)         # [1, 4, 7, 10]
