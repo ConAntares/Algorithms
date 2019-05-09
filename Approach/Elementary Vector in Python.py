@@ -1,4 +1,4 @@
-#### Elementary Array
+#### Elementary Vector
 
 import numpy as np
 
