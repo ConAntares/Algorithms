@@ -57,5 +57,15 @@ println(re)         # [1, 4, 9, 16]
 re = A + B
 println(re)         # [1, 4, 7, 10]
 
-re = A + B
-println(re)         # [1, 4, 7, 10]
+re = A .* B
+println(re)         # [0, 4, 12, 24]
+
+re = A' * B
+println(re)         # 40
+
+re = A * B'
+println(re)         
+    # [0 2  4  6; 
+    #  0 4  8 12; 
+    #  0 6 12 18; 
+    #  0 8 16 24]
