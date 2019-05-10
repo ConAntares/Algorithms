@@ -186,3 +186,19 @@ println(A)
      #      false false false false;
      #      false false false false;
      #      false false false false]
+
+A = [1 2 3;
+     4 5 6;
+     7 8 9]
+
+re = Symmetric(A,:U)
+println(re)
+     # [1 2 3;
+     #  2 5 6;
+     #  3 6 9]
+
+re = Symmetric(A,:L)
+println(re)
+     # [1 4 7;
+     #  4 5 8;
+     #  7 8 9]
