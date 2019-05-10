@@ -110,6 +110,46 @@ re = eigvecs(E)
 println(re)
      # [-0.652932 -0.571265; 0.757416 -0.820766]
 
+A = [1.0 2.0;
+      3.0 4.0]
+B = [0.1 0.2;
+      0.3 0.4]
+
+re = A,B
+println(re)
+     # ([1.0 2.0; 3.0 4.0], 
+     #  [0.1 0.2; 0.3 0.4])
+println(typeof(re))
+     # Tuple{Array{Float64,2},Array{Float64,2}}
+
+re = (A,B)
+println(re)
+     # ([1.0 2.0; 3.0 4.0], 
+     #  [0.1 0.2; 0.3 0.4])
+println(typeof(re))
+     # Tuple{Array{Float64,2},Array{Float64,2}}
+
+re = [A B]
+println(re)
+     # [1.0 2.0 0.1 0.2;
+     #  3.0 4.0 0.3 0.4]
+println(typeof(re))
+     # Array{Float64,2}
+
+re = [A,B]
+println(re)
+     # [1.0 2.0 0.1 0.2;
+     #  3.0 4.0 0.3 0.4]
+println(typeof(re))
+     # Array{Float64,2}
+
+re = [A;B]
+println(re)
+     # [1.0 2.0 0.1 0.2;
+     #  3.0 4.0 0.3 0.4]
+println(typeof(re))
+     # Array{Float64,2}
+
 ## Special Matrices
 n = 4
 A = Matrix{Float64}(I, n, n)
