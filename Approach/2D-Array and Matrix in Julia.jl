@@ -150,107 +150,109 @@ println(re)
 println(typeof(re))
      # Array{Float64,2}
 
-## Special Matrices
-n = 4
-A = Matrix{Float64}(I, n, n)
-println(A)
-    # [1.0 0.0 0.0 0.0; 
-    #  0.0 1.0 0.0 0.0; 
-    #  0.0 0.0 1.0 0.0; 
-    #  0.0 0.0 0.0 1.0]
+## Reshape
 
-A = zeros(Float64,n,n)
-println(A)
-    # [0.0 0.0 0.0 0.0; 
-    #  0.0 0.0 0.0 0.0; 
-    #  0.0 0.0 0.0 0.0; 
-    #  0.0 0.0 0.0 0.0]
+# ## Special Matrices
+# n = 4
+# A = Matrix{Float64}(I, n, n)
+# println(A)
+#     # [1.0 0.0 0.0 0.0; 
+#     #  0.0 1.0 0.0 0.0; 
+#     #  0.0 0.0 1.0 0.0; 
+#     #  0.0 0.0 0.0 1.0]
 
-A = ones(Float64,n,n)
-println(A)
-    # [1.0 1.0 1.0 1.0; 
-    #  1.0 1.0 1.0 1.0; 
-    #  1.0 1.0 1.0 1.0;
-    #  1.0 1.0 1.0 1.0]
+# A = zeros(Float64,n,n)
+# println(A)
+#     # [0.0 0.0 0.0 0.0; 
+#     #  0.0 0.0 0.0 0.0; 
+#     #  0.0 0.0 0.0 0.0; 
+#     #  0.0 0.0 0.0 0.0]
 
-A = trues(n,n)
-println(A)
-     # Bool[true true true true;
-     #      true true true true; 
-     #      true true true true;
-     #      true true true true]
+# A = ones(Float64,n,n)
+# println(A)
+#     # [1.0 1.0 1.0 1.0; 
+#     #  1.0 1.0 1.0 1.0; 
+#     #  1.0 1.0 1.0 1.0;
+#     #  1.0 1.0 1.0 1.0]
 
-A = falses(n,n)
-println(A)
-     # Bool[false false false false;
-     #      false false false false;
-     #      false false false false;
-     #      false false false false]
+# A = trues(n,n)
+# println(A)
+#      # Bool[true true true true;
+#      #      true true true true; 
+#      #      true true true true;
+#      #      true true true true]
 
-A = [1 2 3;
-     4 5 6;
-     7 8 9]
+# A = falses(n,n)
+# println(A)
+#      # Bool[false false false false;
+#      #      false false false false;
+#      #      false false false false;
+#      #      false false false false]
 
-re = Symmetric(A,:U)
-println(re)
-     # [1 2 3;
-     #  2 5 6;
-     #  3 6 9]
+# A = [1 2 3;
+#      4 5 6;
+#      7 8 9]
 
-re = Symmetric(A,:L)
-println(re)
-     # [1 4 7;
-     #  4 5 8;
-     #  7 8 9]
+# re = Symmetric(A,:U)
+# println(re)
+#      # [1 2 3;
+#      #  2 5 6;
+#      #  3 6 9]
 
-re = Bidiagonal(A,:U)
-println(re)
-     # 3×3 Bidiagonal{Int64,Array{Int64,1}}:
-     #  diag: 1  5  9
-     #  super: 2  6
+# re = Symmetric(A,:L)
+# println(re)
+#      # [1 4 7;
+#      #  4 5 8;
+#      #  7 8 9]
 
-re = Bidiagonal(A,:L)
-println(re)
-     # 3×3 Bidiagonal{Int64,Array{Int64,1}}:
-     #  diag: 1  5  9
-     #  sub: 4  8
+# re = Bidiagonal(A,:U)
+# println(re)
+#      # 3×3 Bidiagonal{Int64,Array{Int64,1}}:
+#      #  diag: 1  5  9
+#      #  super: 2  6
 
-re = Tridiagonal(A)
-println(re)
-     # [1 2 0;
-     #  4 5 6; 
-     #  0 8 9]
+# re = Bidiagonal(A,:L)
+# println(re)
+#      # 3×3 Bidiagonal{Int64,Array{Int64,1}}:
+#      #  diag: 1  5  9
+#      #  sub: 4  8
 
-re = UpperTriangular(A)
-println(re)
-     # [1 2 3;
-     #  0 5 6;
-     #  0 0 9]
+# re = Tridiagonal(A)
+# println(re)
+#      # [1 2 0;
+#      #  4 5 6; 
+#      #  0 8 9]
 
-re = LowerTriangular(A)
-println(re)
-     # [1 0 0;
-     #  4 5 0;
-     #  7 8 9]
+# re = UpperTriangular(A)
+# println(re)
+#      # [1 2 3;
+#      #  0 5 6;
+#      #  0 0 9]
 
-re = Hermitian(A)
-println(re)
-     # [1 2 3;
-     #  2 5 6;
-     #  3 6 9]
+# re = LowerTriangular(A)
+# println(re)
+#      # [1 0 0;
+#      #  4 5 0;
+#      #  7 8 9]
 
-V = [1; 2; 3; 4]
-re = Diagonal(V)
-println(re)
-     # [1 0 0 0;
-     #  0 2 0 0; 
-     #  0 0 3 0; 
-     #  0 0 0 4]
+# re = Hermitian(A)
+# println(re)
+#      # [1 2 3;
+#      #  2 5 6;
+#      #  3 6 9]
 
-C = [5; 6; 7]
-re = SymTridiagonal(V,C)
-println(re)
-     # [1 5 0 0;
-     #  5 2 6 0;
-     #  0 6 3 7;
-     #  0 0 7 4]
+# V = [1; 2; 3; 4]
+# re = Diagonal(V)
+# println(re)
+#      # [1 0 0 0;
+#      #  0 2 0 0; 
+#      #  0 0 3 0; 
+#      #  0 0 0 4]
+
+# C = [5; 6; 7]
+# re = SymTridiagonal(V,C)
+# println(re)
+#      # [1 5 0 0;
+#      #  5 2 6 0;
+#      #  0 6 3 7;
+#      #  0 0 7 4]
