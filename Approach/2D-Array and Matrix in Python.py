@@ -14,7 +14,7 @@ print(A.shape)      # (3, 5)
 
 
 
-## Special Matrix
+## Special Matrices
 n = 4
 A = np.identity(n)
 print(A)

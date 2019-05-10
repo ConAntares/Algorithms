@@ -1,5 +1,7 @@
 #### Elementary Matrix
 
+using LinearAlgebra
+
 A = 
 [
     0.0 0.1 0.2 0.3 0.4;
@@ -13,3 +15,26 @@ println(ndims(A))       # 2
 println(size(A))        # (3,5)
 println(size(A,1))      # 3
 println(size(A,2))      # 5
+
+## Special Matrices
+n = 4
+A = Matrix{Float64}(I, n, n)
+println(A)
+    # [1.0 0.0 0.0 0.0; 
+    #  0.0 1.0 0.0 0.0; 
+    #  0.0 0.0 1.0 0.0; 
+    #  0.0 0.0 0.0 1.0]
+
+A = zeros(Float64,n,n)
+println(A)
+    # [0.0 0.0 0.0 0.0; 
+    #  0.0 0.0 0.0 0.0; 
+    #  0.0 0.0 0.0 0.0; 
+    #  0.0 0.0 0.0 0.0]
+
+A = ones(Float64,n,n)
+println(A)
+    # [1.0 1.0 1.0 1.0; 
+    #  1.0 1.0 1.0 1.0; 
+    #  1.0 1.0 1.0 1.0;
+    #  1.0 1.0 1.0 1.0]
