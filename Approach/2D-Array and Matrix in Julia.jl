@@ -79,10 +79,36 @@ println(re)
     # [0.354839 0.292683 0.389831; 
     # 1.30769 1.03774 1.48276]
 
+re = A' * B
+println(re)
+     # [12.25 22.53 26.21;
+     #  18.02 34.07 38.98;
+     #   29.49 55.01 63.45]
 
+re = A * B'
+println(re)
+     # [21.9 22.56; 
+     #  83.83 87.87]
 
+re = tr(E)
+println(re)
+     # 6.720000000000001
 
+re = rank(E)
+println(re)
+     # 2
 
+re = det(E)
+println(re)
+     # 7.0277
+
+re = eigvals(E)
+println(re)
+     # [1.29556, 5.42444]
+
+re = eigvecs(E)
+println(re)
+     # [-0.652932 -0.571265; 0.757416 -0.820766]
 
 # ## Special Matrices
 # n = 4
