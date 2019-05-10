@@ -110,39 +110,39 @@ re = eigvecs(E)
 println(re)
      # [-0.652932 -0.571265; 0.757416 -0.820766]
 
-# ## Special Matrices
-# n = 4
-# A = Matrix{Float64}(I, n, n)
-# println(A)
-#     # [1.0 0.0 0.0 0.0; 
-#     #  0.0 1.0 0.0 0.0; 
-#     #  0.0 0.0 1.0 0.0; 
-#     #  0.0 0.0 0.0 1.0]
+## Special Matrices
+n = 4
+A = Matrix{Float64}(I, n, n)
+println(A)
+    # [1.0 0.0 0.0 0.0; 
+    #  0.0 1.0 0.0 0.0; 
+    #  0.0 0.0 1.0 0.0; 
+    #  0.0 0.0 0.0 1.0]
 
-# A = zeros(Float64,n,n)
-# println(A)
-#     # [0.0 0.0 0.0 0.0; 
-#     #  0.0 0.0 0.0 0.0; 
-#     #  0.0 0.0 0.0 0.0; 
-#     #  0.0 0.0 0.0 0.0]
+A = zeros(Float64,n,n)
+println(A)
+    # [0.0 0.0 0.0 0.0; 
+    #  0.0 0.0 0.0 0.0; 
+    #  0.0 0.0 0.0 0.0; 
+    #  0.0 0.0 0.0 0.0]
 
-# A = ones(Float64,n,n)
-# println(A)
-#     # [1.0 1.0 1.0 1.0; 
-#     #  1.0 1.0 1.0 1.0; 
-#     #  1.0 1.0 1.0 1.0;
-#     #  1.0 1.0 1.0 1.0]
+A = ones(Float64,n,n)
+println(A)
+    # [1.0 1.0 1.0 1.0; 
+    #  1.0 1.0 1.0 1.0; 
+    #  1.0 1.0 1.0 1.0;
+    #  1.0 1.0 1.0 1.0]
 
-# A = trues(n,n)
-# println(A)
-#      # Bool[true true true true;
-#      #      true true true true; 
-#      #      true true true true;
-#      #      true true true true]
+A = trues(n,n)
+println(A)
+     # Bool[true true true true;
+     #      true true true true; 
+     #      true true true true;
+     #      true true true true]
 
-# A = falses(n,n)
-# println(A)
-#      # Bool[false false false false;
-#      #      false false false false;
-#      #      false false false false;
-#      #      false false false false]
+A = falses(n,n)
+println(A)
+     # Bool[false false false false;
+     #      false false false false;
+     #      false false false false;
+     #      false false false false]
