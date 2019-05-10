@@ -95,6 +95,7 @@ println(re)         # 40
 
 U = [1,2,3]
 V = [0,2,4]
+
 re = cross(U,V)
 println(re)         
     # [2, -4, 2]

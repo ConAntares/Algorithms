@@ -33,22 +33,27 @@ re = A .+ 2
 println(re)
      # [3.1 3.2  4.3;
      #  5.4 7.5 10.6]
+
 re = A .- 2
 println(re)
      # [-0.9 -0.8 0.3;
      #   1.4  3.5 6.6]
+
 re = A .* 2
 println(re)
      # [2.2  2.4  4.6;
      #  6.8 11.0 17.2]
+
 re = A ./ 2
 println(re)
      # [0.55 0.6  1.15;
      #  1.7  2.75 4.3]
+
 re = A .% 2
 println(re)
      # [1.1 1.2 0.3;
      #  1.4 1.5 0.6]
+
 re = A .^ 2
 println(re)
      # [ 1.21  1.44  5.29; 
@@ -58,53 +63,60 @@ re = A + B
 println(re)
     # [4.2  5.3  8.2; 
     #  6.0 10.8 14.4]
+
 re = A - B
 println(re)
     # [-2.0 -2.9 -3.6;
     #   0.8  0.2  2.8]
+
 re = A .* B
 println(re)
     # [3.41  4.92 13.57; 
     #  8.84 29.15 49.88]
+
 re = A ./ B
 println(re)
     # [0.354839 0.292683 0.389831; 
     # 1.30769 1.03774 1.48276]
 
 
-## Special Matrices
-n = 4
-A = Matrix{Float64}(I, n, n)
-println(A)
-    # [1.0 0.0 0.0 0.0; 
-    #  0.0 1.0 0.0 0.0; 
-    #  0.0 0.0 1.0 0.0; 
-    #  0.0 0.0 0.0 1.0]
 
-A = zeros(Float64,n,n)
-println(A)
-    # [0.0 0.0 0.0 0.0; 
-    #  0.0 0.0 0.0 0.0; 
-    #  0.0 0.0 0.0 0.0; 
-    #  0.0 0.0 0.0 0.0]
 
-A = ones(Float64,n,n)
-println(A)
-    # [1.0 1.0 1.0 1.0; 
-    #  1.0 1.0 1.0 1.0; 
-    #  1.0 1.0 1.0 1.0;
-    #  1.0 1.0 1.0 1.0]
 
-A = trues(n,n)
-println(A)
-     # Bool[true true true true;
-     #      true true true true; 
-     #      true true true true;
-     #      true true true true]
 
-A = falses(n,n)
-println(A)
-     # Bool[false false false false;
-     #      false false false false;
-     #      false false false false;
-     #      false false false false]
+# ## Special Matrices
+# n = 4
+# A = Matrix{Float64}(I, n, n)
+# println(A)
+#     # [1.0 0.0 0.0 0.0; 
+#     #  0.0 1.0 0.0 0.0; 
+#     #  0.0 0.0 1.0 0.0; 
+#     #  0.0 0.0 0.0 1.0]
+
+# A = zeros(Float64,n,n)
+# println(A)
+#     # [0.0 0.0 0.0 0.0; 
+#     #  0.0 0.0 0.0 0.0; 
+#     #  0.0 0.0 0.0 0.0; 
+#     #  0.0 0.0 0.0 0.0]
+
+# A = ones(Float64,n,n)
+# println(A)
+#     # [1.0 1.0 1.0 1.0; 
+#     #  1.0 1.0 1.0 1.0; 
+#     #  1.0 1.0 1.0 1.0;
+#     #  1.0 1.0 1.0 1.0]
+
+# A = trues(n,n)
+# println(A)
+#      # Bool[true true true true;
+#      #      true true true true; 
+#      #      true true true true;
+#      #      true true true true]
+
+# A = falses(n,n)
+# println(A)
+#      # Bool[false false false false;
+#      #      false false false false;
+#      #      false false false false;
+#      #      false false false false]
