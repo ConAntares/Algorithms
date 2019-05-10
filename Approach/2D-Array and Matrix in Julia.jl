@@ -20,6 +20,36 @@ A = [1.1 1.2 2.3;
      3.4 5.5 8.6]
 B = [3.1 4.1 5.9;
      2.6 5.3 5.8]
+C = Matrix{Complex}([1.1 1.2 2.3;
+                     3.4 5.5 8.6])
+
+println(typeof(A))  # Array{Float64,2}
+println(typeof(B))  # Array{Float64,2}
+println(typeof(C))  # Array{Complex,2}
+# re = A .+ 2
+# println(re)
+#      # [3.1 3.2  4.3;
+#      #  5.4 7.5 10.6]
+# re = A .- 2
+# println(re)
+#      # [-0.9 -0.8 0.3;
+#      #   1.4  3.5 6.6]
+# re = A .* 2
+# println(re)
+#      # [2.2  2.4  4.6;
+#      #  6.8 11.0 17.2]
+# re = A ./ 2
+# println(re)
+#      # [0.55 0.6  1.15;
+#      #  1.7  2.75 4.3]
+# re = A .% 2
+# println(re)
+#      # [1.1 1.2 0.3;
+#      #  1.4 1.5 0.6]
+# re = A .^ 2
+# println(re)
+#      # [ 1.21  1.44  5.29; 
+#      #  11.56 30.25 73.96]
 
 # re = A + B
 # println(re)
@@ -61,3 +91,17 @@ B = [3.1 4.1 5.9;
 #     #  1.0 1.0 1.0 1.0; 
 #     #  1.0 1.0 1.0 1.0;
 #     #  1.0 1.0 1.0 1.0]
+
+# A = trues(n,n)
+# println(A)
+#      # Bool[true true true true;
+#      #      true true true true; 
+#      #      true true true true;
+#      #      true true true true]
+
+# A = falses(n,n)
+# println(A)
+#      # Bool[false false false false;
+#      #      false false false false;
+#      #      false false false false;
+#      #      false false false false]
