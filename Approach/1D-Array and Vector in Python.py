@@ -136,3 +136,11 @@ n = 4
 re = np.empty(n, dtype=np.float64)
 print(re)
     # [5.e-324 4.e-323 4.e-323 4.e-323]
+
+re = np.zeros(n)
+print(re)
+    # [0. 0. 0. 0.]
+
+re = np.ones(n)
+print(re)
+    # [1. 1. 1. 1.]

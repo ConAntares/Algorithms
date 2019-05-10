@@ -11,8 +11,10 @@ print(A.size)       # 15
 print(A.ndim)       # 2
 print(A.shape)      # (3, 5)
 
-## Special Matrix
 
+
+
+## Special Matrix
 n = 4
 A = np.identity(n)
 print(A)
