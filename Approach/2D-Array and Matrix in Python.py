@@ -17,44 +17,61 @@ B = np.array([[3.1, 4.1, 5.9],
               [2.6, 5.3, 5.8]])
 C = np.array([[1.1, 1.2, 2.3],
               [3.4, 5.5, 8.6]],dtype=complex)
+D = np.matrix([[1.1, 1.2, 2.3],
+               [3.4, 5.5, 8.6]],dtype=complex)
 
-print(type(A))      # <class 'numpy.ndarray'>
-print(type(B))      # <class 'numpy.ndarray'>
-print(type(C))      # <class 'numpy.ndarray'>
-# re = A + 2
-# print(re)
-#     # [[ 3.1  3.2  4.3]
-#     #  [ 5.4  7.5 10.6]]
-# re = A - 2
-# print(re)
-#     # [[-0.9 -0.8  0.3]
-#     #  [ 1.4  3.5  6.6]]
-# re = A * 2
-# print(re)
-#     # [[ 2.2  2.4  4.6]
-#     #  [ 6.8 11.  17.2]]
-# re = A / 2
-# print(re)
-#     # [[0.55 0.6  1.15]
-#     #  [1.7  2.75 4.3 ]]
-# re = A % 2
-# print(re)
-#     # [[1.1 1.2 0.3]
-#     #  [1.4 1.5 0.6]]
-# re = A ** 2
-# print(re)
-#     # [[ 1.21  1.44  5.29]
-#     #  [11.56 30.25 73.96]]
-# re = A.T
-# print(re)
-#     # [[1.1 3.4]
-#     #  [1.2 5.5]
-#     #  [2.3 8.6]]
-# re = np.conj(C)
-# print(re)
-#     # [[1.1-0.j 1.2-0.j 2.3-0.j]
-#     #  [3.4-0.j 5.5-0.j 8.6-0.j]]
+print(type(A))      
+    # <class 'numpy.ndarray'>
+print(type(B))      
+    # <class 'numpy.ndarray'>
+print(type(C))      
+    # <class 'numpy.ndarray'>
+print(type(D))      
+    # <class 'numpy.matrix'>
 
+re = A + 2
+print(re)
+    # [[ 3.1  3.2  4.3]
+    #  [ 5.4  7.5 10.6]]
+re = A - 2
+print(re)
+    # [[-0.9 -0.8  0.3]
+    #  [ 1.4  3.5  6.6]]
+re = A * 2
+print(re)
+    # [[ 2.2  2.4  4.6]
+    #  [ 6.8 11.  17.2]]
+re = A / 2
+print(re)
+    # [[0.55 0.6  1.15]
+    #  [1.7  2.75 4.3 ]]
+re = A % 2
+print(re)
+    # [[1.1 1.2 0.3]
+    #  [1.4 1.5 0.6]]
+re = A ** 2
+print(re)
+    # [[ 1.21  1.44  5.29]
+    #  [11.56 30.25 73.96]]
+re = A.T
+print(re)
+    # [[1.1 3.4]
+    #  [1.2 5.5]
+    #  [2.3 8.6]]
+re = np.conj(C)
+print(re)
+    # [[1.1-0.j 1.2-0.j 2.3-0.j]
+    #  [3.4-0.j 5.5-0.j 8.6-0.j]]
+re = D.H
+print(re)
+    # [[1.1-0.j 3.4-0.j]
+    #  [1.2-0.j 5.5-0.j]
+    #  [2.3-0.j 8.6-0.j]]
+re = D.I
+print(re)
+    # [[ 2.07835392+0.j -0.5113589 +0.j]
+    #  [-2.22811141+0.j  0.62719803+0.j]
+    #  [ 0.60328016+0.j -0.0826708 +0.j]]
 
 # re = A + B
 # print(re)
