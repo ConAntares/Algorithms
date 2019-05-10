@@ -11,8 +11,8 @@ This file is used to store the algorithms for Deep Learning and Machine Learning
 
 ## Reference
 
-[<img src="Logo/Python.png" height="80">](https://docs.python.org/3/)
-[<img src="Logo/Numpy.png" height="80">](https://docs.scipy.org/doc/numpy/)
-[<img src="Logo/Scipy.png" height="80">](https://docs.scipy.org/doc/scipy/)
-[<img src="Logo/Julia.png" height="80">](https://docs.julialang.org/en/v1/)
-[<img src="Logo/Tensorflow.png" height="80">](https://www.tensorflow.org/tutorials/)
+[<img src="https://github.com/ConAntares/Algorithms/blob/master/Approach/Logo/Python.png" height="80">](https://docs.python.org/3/)
+[<img src="https://github.com/ConAntares/Algorithms/blob/master/Approach/Logo/Numpy.png" height="80">](https://docs.scipy.org/doc/numpy/)
+[<img src="https://github.com/ConAntares/Algorithms/blob/master/Approach/Logo/Scipy.png" height="80">](https://docs.scipy.org/doc/scipy/)
+[<img src="https://github.com/ConAntares/Algorithms/blob/master/Approach/Logo/Julia.png" height="80">](https://docs.julialang.org/en/v1/)
+[<img src="https://github.com/ConAntares/Algorithms/blob/master/Approach/Logo/Tensorflow.png" height="80">](https://www.tensorflow.org/tutorials/)
