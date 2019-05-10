@@ -202,3 +202,55 @@ println(re)
      # [1 4 7;
      #  4 5 8;
      #  7 8 9]
+
+re = Bidiagonal(A,:U)
+println(re)
+     # 3×3 Bidiagonal{Int64,Array{Int64,1}}:
+     #  diag: 1  5  9
+     #  super: 2  6
+
+re = Bidiagonal(A,:L)
+println(re)
+     # 3×3 Bidiagonal{Int64,Array{Int64,1}}:
+     #  diag: 1  5  9
+     #  sub: 4  8
+
+re = Tridiagonal(A)
+println(re)
+     # [1 2 0;
+     #  4 5 6; 
+     #  0 8 9]
+
+re = UpperTriangular(A)
+println(re)
+     # [1 2 3;
+     #  0 5 6;
+     #  0 0 9]
+
+re = LowerTriangular(A)
+println(re)
+     # [1 0 0;
+     #  4 5 0;
+     #  7 8 9]
+
+re = Hermitian(A)
+println(re)
+     # [1 2 3;
+     #  2 5 6;
+     #  3 6 9]
+
+V = [1; 2; 3; 4]
+re = Diagonal(V)
+println(re)
+     # [1 0 0 0;
+     #  0 2 0 0; 
+     #  0 0 3 0; 
+     #  0 0 0 4]
+
+C = [5; 6; 7]
+re = SymTridiagonal(V,C)
+println(re)
+     # [1 5 0 0;
+     #  5 2 6 0;
+     #  0 6 3 7;
+     #  0 0 7 4]
