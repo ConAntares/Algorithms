@@ -1,5 +1,20 @@
 #### Elementary Vector
 
+re = range(1; stop = 10)
+println(re)
+    # 1:10
+re = range(1.0; stop = 10)
+println(re)
+    # 1.0:1.0:10.0
+
+re = range(1; stop = 10, step = 2)
+println(re)
+    # 1:2:9
+
+re = range(1; stop = 10, length = 5)
+println(re)
+    # 1.0:2.25:10.0
+
 A = [0,1,2,3,4,5,6,7,8,9]
 
 println(A)          # [1, 2, 3, 4, 5]
