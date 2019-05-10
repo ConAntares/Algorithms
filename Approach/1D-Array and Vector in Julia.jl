@@ -1,5 +1,7 @@
 #### Elementary Vector
 
+using LinearAlgebra
+
 re = range(1; stop = 10)
 println(re)
     # 1:10
@@ -84,3 +86,15 @@ println(re)
     #  0 4  8 12; 
     #  0 6 12 18; 
     #  0 8 16 24]
+
+re = dot(A',B)
+println(re)         # 40
+
+re = dot(A,B')
+println(re)         # 40
+
+U = [1,2,3]
+V = [0,2,4]
+re = cross(U,V)
+println(re)         
+    # [2, -4, 2]
