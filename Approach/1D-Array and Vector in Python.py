@@ -129,3 +129,10 @@ print(re)
     #  [ 0  4  8 12]
     #  [ 0  6 12 18]
     #  [ 0  8 16 24]]
+
+## Special Array
+
+n = 4
+re = np.empty(n, dtype=np.float64)
+print(re)
+    # [5.e-324 4.e-323 4.e-323 4.e-323]
