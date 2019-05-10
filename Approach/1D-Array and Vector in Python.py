@@ -130,7 +130,13 @@ print(re)
     #  [ 0  6 12 18]
     #  [ 0  8 16 24]]
 
-## Special Array
+U = np.array([1,2,3])
+V = np.array([0,2,4])
+re = np.cross(U, V)
+print(re)
+    # [ 2 -4  2]
+
+# Special Array
 
 n = 4
 re = np.empty(n, dtype=np.float64)
