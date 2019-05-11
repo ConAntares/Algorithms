@@ -52,7 +52,7 @@ plt.rcParams['font.family'] = 'CMU Serif'
 plt.plot(X, Y, "o", c="#B4B4B4", alpha=0.9)
 plt.plot(X[1:len(L1)-1], L1[1:len(L1)-1], c="#FF1E14", alpha=0.9)
 plt.plot(X[2:len(L1)-2], L2[2:len(L1)-2], c="#FFC814", alpha=0.9)
-plt.plot(X[3:len(L1)-3], L3[3:len(L1)-3], c="#00A0DC", alpha=0.9)
+plt.plot(X[3:len(L1)-3], L3[3:len(L1)-3], c="#1978F0", alpha=0.9)
 plt.plot(X[4:len(L1)-4], L4[4:len(L1)-4], c="#A064DC", alpha=0.9)
 
 plt.tick_params(direction='in')
