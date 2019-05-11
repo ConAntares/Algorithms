@@ -20,8 +20,8 @@ myCyan      = "#00B4DC" # 000,180,220
 mySky       = "#00A0DC" # 000,160,220
 myBlue      = "#1978BE" # 025,120,190
 myDarkBlue  = "#3C78B4" # 060,120,180
-myPurple    = "#A064DC" # 160,100,220
-myViolet    = "#8C14C8" # 140,020,200
+myViolet    = "#A064DC" # 160,100,220
+myPurple    = "#8C14C8" # 140,020,200
 myPink      = "#DC64C8" # 220,100,200
 myBrown     = "#8C5A50" # 140,090,080
 
