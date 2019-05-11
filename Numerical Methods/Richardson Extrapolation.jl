@@ -55,5 +55,5 @@ println("The time interval is $td s.")
 
 plot(fontfamily=("Serif"),dpi=512)
 scatter!(X,Y, color="#B4B4B4",marker=(:circle,10,Plots.stroke(:white)),label="Source")
-plot!(X[1:count-1],U1[1:count-1],color="#F0140A",label="Foreast")
+plot!(X[1:count-1],U1[1:count-1],color="#FF1E14",label="Foreast")
 plot!(X[1:count-2],U2[1:count-2],color="#00A0DC",label="Foreast")

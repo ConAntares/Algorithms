@@ -10,7 +10,7 @@ from matplotlib.colors import LinearSegmentedColormap
 
 myBlack     = "#282828" # 040,040,040
 myGary      = "#B4B4B4" # 180,180,180
-myRed       = "#F0140A" # 240,020,010
+myRed       = "#FF1E14" # 240,020,010
 myOrange    = "#FF7800" # 255,120,000
 myGold      = "#FFC814" # 255,200,020
 myYellow    = "#F0F000" # 240,240,000

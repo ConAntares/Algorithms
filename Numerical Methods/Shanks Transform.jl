@@ -56,7 +56,7 @@ end
 
 plot(fontfamily=("Serif"),dpi=512)
 scatter!(X,Y, color="#B4B4B4",marker=(:circle,10,Plots.stroke(:white)),label="Source")
-plot!(X[2:count-1],L1[2:count-1],color="#F0140A",label="Foreast")
+plot!(X[2:count-1],L1[2:count-1],color="#FF1E14",label="Foreast")
 plot!(X[3:count-2],L2[3:count-2],color="#FFC814",label="Foreast")
 plot!(X[4:count-3],L3[4:count-3],color="#00A0DC",label="Foreast")
 plot!(X[5:count-4],L4[5:count-4],color="#A064DC",label="Foreast")

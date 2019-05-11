@@ -47,7 +47,7 @@ print("The time interval is %f s." %td)
 
 plt.rcParams['font.family'] = 'CMU Serif'
 plt.plot(X, Y, "o", c="#B4B4B4", alpha=0.9)
-plt.plot(X[0:len(U1)-1], U1[0:len(U1)-1], c="#F0140A", alpha=0.9)
-plt.plot(X[0:len(U1)-2], U2[0:len(U1)-2], c="#FFC814", alpha=0.9)
+plt.plot(X[0:len(U1)-1], U1[0:len(U1)-1], c="#FF1E14", alpha=0.9)
+plt.plot(X[0:len(U1)-2], U2[0:len(U1)-2], c="#00A0DC", alpha=0.9)
 plt.tick_params(direction='in')
 plt.show()
