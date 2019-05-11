@@ -22,7 +22,7 @@ function lagrange_interpolate_plus(X,Y,t)
     sum(Y[i] * prod((t-X[j])/(X[i]-X[j]) for j in idxs if j != i) for i in idxs)
 end
 
-A = readdlm("Numerical Methods/Data/data02.dat")
+A = readdlm("Data/dataSim.dat")
 X = view(A,:,1)
 Y = view(A,:,2)
 T = 1.0:0.1:2.0
@@ -32,7 +32,10 @@ td = time() - to
 println("The time interval is $td s.")
 
 plot(fontfamily=("Serif"),dpi=512)
-scatter!(T,U,color="#00B4DC",marker=(:cross,10,Plots.stroke(:white)),label="Foreast")
-scatter!(X,Y,color="#32B432",marker=(:circle,10,Plots.stroke(:white)),label="Source")
+# scatter!(X,Y,color="#32B432",marker=(:circle,10,Plots.stroke(:white)),label="Source")
+# scatter!(T,U,color="#00B4DC",marker=(:cross,10,Plots.stroke(:white)),label="Foreast")
+plot!(X,Y,color="#32B432",marker=(:circle,10,Plots.stroke(:white)),label="Source")
+plot!(T,U,color="#00B4DC",marker=(:cross,10,Plots.stroke(:white)),label="Foreast")
+
 
 # savefig("U.pdf")

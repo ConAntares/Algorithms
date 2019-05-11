@@ -11,7 +11,7 @@ def lagrange_interpolate(x, y, t):
     p = lagrange(x, y)
     return p(t)
 
-x, y = np.loadtxt('Numerical Methods/Data/data02.dat', unpack=True)
+x, y = np.loadtxt('Data/dataSim.dat', unpack=True)
 t = np.linspace(1, 2, 11)
 u = lagrange_interpolate(x, y, t)
 
