@@ -15,7 +15,7 @@ Y = view(A,:,2)
 count = length(X)
 
 L1 = ones(count)
-for i in range(1,count)
+for i in range(1; stop = count)
     if i in 2:count-1
         L1[i] = (Y[i]^2-Y[i-1]*Y[i+1])/(2*Y[i]-Y[i-1]-Y[i+1])
     else
@@ -25,7 +25,7 @@ for i in range(1,count)
 end
 
 L2 = ones(count)
-for i in range(1,count)
+for i in range(1; stop = count)
     if i in 2:count-1
         L2[i] = (L1[i]^2-L1[i-1]*L1[i+1])/(2*L1[i]-L1[i-1]-L1[i+1])
     else
@@ -35,7 +35,7 @@ for i in range(1,count)
 end
 
 L3 = ones(count)
-for i in range(1,count)
+for i in range(1; stop = count)
     if i in 2:count-1
         L3[i] = (L2[i]^2-L2[i-1]*L2[i+1])/(2*L2[i]-L2[i-1]-L2[i+1])
     else
@@ -45,7 +45,7 @@ for i in range(1,count)
 end
 
 L4 = ones(count)
-for i in range(1,count)
+for i in range(1; stop = count)
     if i in 2:count-1
         L4[i] = (L3[i]^2-L3[i-1]*L3[i+1])/(2*L3[i]-L3[i-1]-L3[i+1])
     else

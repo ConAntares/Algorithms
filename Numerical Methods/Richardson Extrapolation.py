@@ -43,7 +43,7 @@ U1 = RE1(Y)
 U2 = RE2(Y)
 
 td = time.time() - to
-print("The time interval is $td s.")
+print("The time interval is %f s." %td)
 
 plt.rcParams['font.family'] = 'CMU Serif'
 plt.plot(X, Y, "o", c="#B4B4B4", alpha=0.9)
