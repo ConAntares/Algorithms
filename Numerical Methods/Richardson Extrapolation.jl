@@ -8,8 +8,43 @@ using Plots; pyplot()
 Sn = 1 + 1/2^2 + 1/3^2 + 1/4^2 + ... + 1/n^2
 lim(n->∞)Sn = π^2/6 ≈ 1.6449340668482264
 
-R1(n) = ((n+1)*S(n+1) - n*S(n))/factorial(1)
+R1(n) = ((n+1)*S(n+1)-n*S(n))/factorial(1)
 R2(n) = ((n+2)^2*S(n+1)-2*(n+1)^2*S(n+1)+n^2*S(n))/factorial(2)
 ……
 """
 
+to = time()
+
+A = readdlm("Data/Td.dat")
+X = view(A,:,1)
+Y = view(A,:,2)
+
+count = length(X)
+
+R1 = ones(count)
+for i in range(1; stop=count)
+    if i in 1:count - 1
+        R1[i] = ((i+1)*Y[i+1]-i*Y[i])/factorial(1)
+    else
+        R1[i] = 0
+    end
+    i = i + 1
+end
+
+R2 = ones(count)
+for i in range(1; stop=count)
+    if i in 1:count - 2
+        R2[i] = ((i+2)^2*Y[i+2]-2*(i+1)^2*Y[i+1]+i^2*Y[i])/factorial(2)
+    else
+        R2[i] = 0
+    end
+    i = i + 1
+end
+
+plot(fontfamily=("Serif"),dpi=512)
+scatter!(X,Y, color="#B4B4B4",marker=(:circle,10,Plots.stroke(:white)),label="Source")
+plot!(X[1:count-1],R1[1:count-1],color="#F0140A",label="Foreast")
+plot!(X[1:count-2],R2[1:count-2],color="#00A0DC",label="Foreast")
+
+td = time() - to
+println("The time interval is $td s.")
