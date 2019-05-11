@@ -4,6 +4,10 @@ using DelimitedFiles
 using LinearAlgebra
 using Plots; pyplot()
 
+"""
+L[i] = (S[i]^2-S[i-1]*S[i+1])/(2*S[i]-S[i-1]-S[i+1])
+"""
+
 A = readdlm("Data/Tr.dat")
 X = view(A,:,1)
 Y = view(A,:,2)

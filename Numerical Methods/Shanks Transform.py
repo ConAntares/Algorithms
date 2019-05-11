@@ -3,6 +3,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+"""
+L[i] = (S[i]^2-S[i-1]*S[i+1])/(2*S[i]-S[i-1]-S[i+1])
+"""
+
 # Load Harmonic Series
 X,Y = np.loadtxt('Data/Tr.dat', unpack=True)
 
