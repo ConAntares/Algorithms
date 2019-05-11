@@ -20,4 +20,8 @@ print(A[1,0,0])     # 1.00
 print(A[0,1,0])     # 2.71
 print(A[0,0,1])     # 1.59
 
-
+print(A.dtype)      # float64
+print(A.ndim)       # 3
+print(A.shape)      # (2, 3, 4)
+print(A.size)       # 24
+print(A.nbytes)     # 192
