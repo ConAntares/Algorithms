@@ -183,5 +183,5 @@ ircad  = LinearSegmentedColormap("IR CA Diverging",ircad)
 ircac1 = LinearSegmentedColormap("IR CA Cold",ircac1)
 ircac2 = LinearSegmentedColormap("IR CA Cold",ircac2)
 
-## Enjoy it 
+## Enjoy it !
 ## ✿✿ヽ(°▽°)ノ✿✿

@@ -1,1 +1,0 @@
-#### Elementary Vector
