@@ -136,7 +136,7 @@ re = np.cross(U, V)
 print(re)
     # [ 2 -4  2]
 
-A = np.matrix([3,1,4,1,5,9],dtype=complex)
+A = np.matrix([3,1,4,1,5,9],dtype = complex)
 
 print(type(A))
     # <class 'numpy.matrix'>
