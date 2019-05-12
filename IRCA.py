@@ -1,4 +1,4 @@
-#### My Colormap: IRCA
+#### My Colors and Colormaps: IRCA
 
 import matplotlib as mpl
 import matplotlib.pyplot as plt
