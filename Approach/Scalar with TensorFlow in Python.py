@@ -61,6 +61,8 @@ print(r"tfs.run(op4, feed_dict={p1:[2.0,3.0,4.0], p2:[3.0,4.0,5.0]}):", re)
     # tfs.run(op4, feed_dict={p1:[2.0,3.0,4.0], p2:[3.0,4.0,5.0]}): [ 6. 12. 20.]
 
 
+### Functions
+
 ## Arithmetic Operation
 """
 tf.add, tf.math.add
