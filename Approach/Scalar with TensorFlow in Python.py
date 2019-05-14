@@ -61,3 +61,115 @@ print(r"tfs.run(op4, feed_dict={p1:[2.0,3.0,4.0], p2:[3.0,4.0,5.0]}):", re)
     # tfs.run(op4, feed_dict={p1:[2.0,3.0,4.0], p2:[3.0,4.0,5.0]}): [ 6. 12. 20.]
 
 
+## Arithmetic Operation
+"""
+tf.add, tf.math.add
+tf.subtract
+tf.multiply
+tf.scalar_mul
+tf.div
+tf.divide
+tf.truediv
+tf.floordiv
+tf.realdiv
+tf.truncatediv
+tf.floor_div
+tf.truncatemod
+tf.floormod
+tf.mod
+tf.cross
+"""
+
+## Basic Mathematical Operations
+"""
+tf.add_n
+tf.abs
+tf.negative
+tf.sign
+tf.reciprocal
+tf.square
+tf.round
+tf.sqrt
+tf.rsqrt
+tf.pow
+tf.exp
+tf.expm1
+tf.log
+tf.log1p
+tf.ceil
+tf.floor
+tf.maximum
+tf.minimum
+tf.cos
+tf.sin
+tf.lbeta
+tf.tan
+tf.acos
+tf.asin
+tf.atan
+tf.lgamma
+tf.digamma
+tf.erf
+tf.erfc
+tf.igamma
+tf.squared_difference
+tf.igammac
+tf.zeta
+tf.polygamma
+tf.betainc
+tf.rint
+"""
+
+## Matrix Mathematical Operations
+"""
+tf.diag
+tf.diag_part
+tf.trace
+tf.transpose
+tf.eye
+tf.matrix_diag
+tf.matrix_diag_part
+tf.matrix_band_part
+tf.matrix_set_diag
+tf.matrix_transpose
+tf.matmul
+tf.norm
+tf.matrix_determinant
+tf.matrix_inverse
+tf.cholesky
+tf.cholesky_solve
+tf.matrix_solve
+tf.matrix_triangular_solve
+tf.matrix_solve_ls
+tf.qr
+tf.self_adjoint_eig
+tf.self_adjoint_eigvals
+tf.svd
+"""
+
+## Tensor Mathematical Operations
+"""
+tf.tensordot
+"""
+
+## Complex Number Operations
+"""
+tf.complex 
+tf.conj 
+tf.imag 
+tf.real
+"""
+
+## Complex Number Operations
+"""
+tf.string_to_hash_bucket_fast
+tf.string_to_hash_bucket_strong
+tf.as_string
+tf.encode_base64
+tf.decode_base64
+tf.reduce_join
+tf.string_join
+tf.string_split
+tf.substr
+tf.string_to_hash_bucket
+"""
