@@ -15,6 +15,7 @@ tf.add(x1 + x2 + x3)
 """
 
 ## Calculate Linear Model y = w×x + b
+
 w = tf.Variable([0.3], tf.float32)          # Define model parameter: w
 b = tf.Variable([-.3], tf.float32)          # Define model parameter: b
 x = tf.placeholder(tf.float32)              # Define model input and output
@@ -25,3 +26,10 @@ with tf.Session() as tfs:
     output = tfs.run(y, {x:[1,2,3,4]})      # Print the variable y
 print('output : ',output)
     # output :  [0.         0.3        0.6        0.90000004]
+
+
+## Executing Graphs Across Compute Devices - CPU and GPU
+"""
+from tensorflow.python.client import device_lib
+print(device_lib.list_local_devices())
+"""
