@@ -60,8 +60,42 @@ re = tfs.run(op4, feed_dict={p1:[2.0,3.0,4.0], p2:[3.0,4.0,5.0]})
 print(r"tfs.run(op4, feed_dict={p1:[2.0,3.0,4.0], p2:[3.0,4.0,5.0]}):", re)
     # tfs.run(op4, feed_dict={p1:[2.0,3.0,4.0], p2:[3.0,4.0,5.0]}): [ 6. 12. 20.]
 
+## Variable
+# tf.placeholder 
+"""
+tf.placeholder defines input data that does not change over time
+tf.placeholder does not need an initial value at the time of definition
+"""
+# tf.Variable
+"""
+tf.Variable defines variable values that are modified over time
+tf.Variable needs an initial value at the time of definition
+"""
 
-## Tensors:
+# y = Wx + B
+W = tf.Variable([0.3], tf.float32)  # W = [0.3]
+B = tf.Variable([-0.3],tf.float32)  # B = [-0.3]
+x = tf.placeholder(tf.float32)
+y = tf.placeholder(tf.float64)
+y = W*x + B
+print("W:", W)                      # W: <tf.Variable 'Variable:0' shape=(1,) dtype=float32_ref>
+print("B:", B)                      # B: <tf.Variable 'Variable_1:0' shape=(1,) dtype=float32_ref>
+print("x:", x)                      # x: Tensor("Placeholder_2:0", dtype=float32)
+print("y:", y)                      # y: Tensor("add_1:0", dtype=float32)
+
+## Initialization
+tfs.run(W.initializer)              # Initialize W
+
+# Initial All Variables
+tfs.run(tf.global_variables_initializer())
+
+# Global Initialization
+tf.global_variables_initializer().run()
+re = tfs.run(y, {x:[1,2,3,4]})
+print(r"tfs.run(y, {x:[1,2,3,4]}):", re)
+    # tfs.run(y, {x:[1,2,3,4]}): [0.         0.3        0.6        0.90000004]
+
+## Tensors
 """
 Zero-dimensional collection:    Scalar
 One-dimensional collection:     Vector
@@ -69,28 +103,28 @@ Two-dimensional collection:     Matrix
 N-dimensional collection:       Tensor of rank N
 """
 
-## TensorFlow Python API data type   Description
+## TensorFlow Python API Data Type      Description
 """
-tf.int8                           8 bit signed integer
-tf.uint8                          8 bit unsigned integer
-tf.qint8                          8 bit quantized signed integer
-tf.quint8                         8 bit quantized unsigned integer
-tf.int16                          16 bit signed integer
-tf.uint16                         16 bit unsigned integer
-tf.qint16                         16 bit quantized  signed integer
-tf.quint16                        16 bit quantized  unsigned integer
-tf.int32                          32 bit signed integer
-tf.qint32                         32 bit quantized signed integer
-tf.int64                          64 bit signed integer
-tf.float16                        16 bit half-precision floating point
-tf.float32                        32 bit single-precision floating point
-tf.float64                        64 bit double-precision floating point
-tf.bfloat16                       16 bit truncated floating point
-tf.complex64                      64 bit single-precision complex
-tf.complex128                     128 bit double-precision complex
-tf.bool                           Boolean
-tf.string                         String
-tf.resource                       Handle to a mutable resource
+tf.int8                                 8 bit signed integer
+tf.uint8                                8 bit unsigned integer
+tf.qint8                                8 bit quantized signed integer
+tf.quint8                               8 bit quantized unsigned integer
+tf.int16                                16 bit signed integer
+tf.uint16                               16 bit unsigned integer
+tf.qint16                               16 bit quantized  signed integer
+tf.quint16                              16 bit quantized  unsigned integer
+tf.int32                                32 bit signed integer
+tf.qint32                               32 bit quantized signed integer
+tf.int64                                64 bit signed integer
+tf.float16                              16 bit half-precision floating point
+tf.float32                              32 bit single-precision floating point
+tf.float64                              64 bit double-precision floating point
+tf.bfloat16                             16 bit truncated floating point
+tf.complex64                            64 bit single-precision complex
+tf.complex128                           128 bit double-precision complex
+tf.bool                                 Boolean
+tf.string                               String
+tf.resource                             Handle to a mutable resource
 """
 
 ## Structure Tensor via 
