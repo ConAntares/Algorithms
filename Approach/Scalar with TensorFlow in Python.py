@@ -61,7 +61,42 @@ print(r"tfs.run(op4, feed_dict={p1:[2.0,3.0,4.0], p2:[3.0,4.0,5.0]}):", re)
     # tfs.run(op4, feed_dict={p1:[2.0,3.0,4.0], p2:[3.0,4.0,5.0]}): [ 6. 12. 20.]
 
 
-### Functions
+## Tensors:
+"""
+Zero-dimensional collection:    Scalar
+One-dimensional collection:     Vector
+Two-dimensional collection:     Matrix
+N-dimensional collection:       Tensor of rank N
+"""
+
+## TensorFlow Python API data type   Description
+"""
+tf.int8                           8 bit signed integer
+tf.uint8                          8 bit unsigned integer
+tf.qint8                          8 bit quantized signed integer
+tf.quint8                         8 bit quantized unsigned integer
+tf.int16                          16 bit signed integer
+tf.uint16                         16 bit unsigned integer
+tf.qint16                         16 bit quantized  signed integer
+tf.quint16                        16 bit quantized  unsigned integer
+tf.int32                          32 bit signed integer
+tf.qint32                         32 bit quantized signed integer
+tf.int64                          64 bit signed integer
+tf.float16                        16 bit half-precision floating point
+tf.float32                        32 bit single-precision floating point
+tf.float64                        64 bit double-precision floating point
+tf.bfloat16                       16 bit truncated floating point
+tf.complex64                      64 bit single-precision complex
+tf.complex128                     128 bit double-precision complex
+tf.bool                           Boolean
+tf.string                         String
+tf.resource                       Handle to a mutable resource
+"""
+
+## Structure Tensor via 
+"""
+tf.convert_to_tensor()
+"""
 
 ## Arithmetic Operation
 """
