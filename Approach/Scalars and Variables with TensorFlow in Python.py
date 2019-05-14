@@ -1,4 +1,4 @@
-#### Scalar with TensorFlow in Python
+#### Scalars and Variables with TensorFlow in Python
 
 import tensorflow as tf
 
