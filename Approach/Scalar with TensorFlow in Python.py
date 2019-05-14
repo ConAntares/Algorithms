@@ -100,17 +100,17 @@ tf.ones_initializer
 tf.orthogonal_initializer
 """
 
-# ## Initialization
-# tfs.run(W.initializer)              # Initialize W
+## Initialization
+tfs.run(W.initializer)              # Initialize W
 
-# # Initial All Variables
-# tfs.run(tf.global_variables_initializer())
+# Initial All Variables
+tfs.run(tf.global_variables_initializer())
 
-# # Global Initialization
-# tf.global_variables_initializer().run()
-# re = tfs.run(y, {x:[1,2,3,4]})
-# print(r"tfs.run(y, {x:[1,2,3,4]}):", re)
-#     # tfs.run(y, {x:[1,2,3,4]}): [0.         0.3        0.6        0.90000004]
+# Global Initialization
+tf.global_variables_initializer().run()
+re = tfs.run(y, {x:[1,2,3,4]})
+print(r"tfs.run(y, {x:[1,2,3,4]}):", re)
+    # tfs.run(y, {x:[1,2,3,4]}): [0.         0.3        0.6        0.90000004]
 
 ## Tensors
 """
