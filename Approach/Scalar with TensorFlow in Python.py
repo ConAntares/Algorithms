@@ -5,7 +5,6 @@ import tensorflow as tf
 tfs = tf.InteractiveSession()
 
 ## Constant
-
 c1 = tf.constant(5,   name = "x")
 c2 = tf.constant(6.0, name = "y")
 c3 = tf.constant(7.0, tf.float64, name = "z")
@@ -22,7 +21,6 @@ print("run([c1,c2,c3]):",run)
     # run([c1,c2,c3]): [5, 6.0, 7.0]
 
 ## Operator
-
 op1 = tf.add(c3,c4)
 op2 = tf.multiply(c3,c4)
 print("op1: ",op1)
@@ -83,17 +81,36 @@ print("B:", B)                      # B: <tf.Variable 'Variable_1:0' shape=(1,) 
 print("x:", x)                      # x: Tensor("Placeholder_2:0", dtype=float32)
 print("y:", y)                      # y: Tensor("add_1:0", dtype=float32)
 
-## Initialization
-tfs.run(W.initializer)              # Initialize W
+# Get Variables via
+"""
+tf.get_variable()
+"""
+w = tf.get_variable(name="w", shape=[1], dtype=tf.float64, initializer=[12.0])
+b = tf.get_variable(name="b", shape=[1], dtype=tf.float64, initializer=[-6.0])
 
-# Initial All Variables
-tfs.run(tf.global_variables_initializer())
+## Initializer
+"""
+tf.constant_initializer
+tf.random_normal_initializer
+tf.truncated_normal_initializer
+tf.random_uniform_initializer
+tf.uniform_unit_scaling_initializer
+tf.zeros_initializer
+tf.ones_initializer
+tf.orthogonal_initializer
+"""
 
-# Global Initialization
-tf.global_variables_initializer().run()
-re = tfs.run(y, {x:[1,2,3,4]})
-print(r"tfs.run(y, {x:[1,2,3,4]}):", re)
-    # tfs.run(y, {x:[1,2,3,4]}): [0.         0.3        0.6        0.90000004]
+# ## Initialization
+# tfs.run(W.initializer)              # Initialize W
+
+# # Initial All Variables
+# tfs.run(tf.global_variables_initializer())
+
+# # Global Initialization
+# tf.global_variables_initializer().run()
+# re = tfs.run(y, {x:[1,2,3,4]})
+# print(r"tfs.run(y, {x:[1,2,3,4]}):", re)
+#     # tfs.run(y, {x:[1,2,3,4]}): [0.         0.3        0.6        0.90000004]
 
 ## Tensors
 """
