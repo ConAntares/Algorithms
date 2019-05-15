@@ -9,7 +9,7 @@ def Walk(tot):
     x_values = [0]
     y_values = [0]
 
-    while len(x_values) < tot:
+    while len(x_values) <= tot:
         x_direction = rd.choice([-1,1])
         x_distance  = rd.choice([1,2,3,4])
         x_move      = x_direction * x_distance
