@@ -1,4 +1,4 @@
-#### Random Walk in Python
+#### Random Walk
 
 import numpy as np
 import random as rd
