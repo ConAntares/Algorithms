@@ -22,4 +22,4 @@ N = 1:1:1000
 H = [Harmonic(n) for n in N]
 
 plot(fontfamily=("Serif"),dpi=1024)
-plot!(N,H,color="#00B4DC",label="Harmonic Series")
+scatter!(N,H,color="#00B4DC",label="Harmonic Series")
