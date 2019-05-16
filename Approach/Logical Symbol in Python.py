@@ -46,6 +46,19 @@ print(str)              # True
 str = not (True and True) 
 print(str)              # False
 
+## Nor
+str = not (False or False) 
+print(str)              # True
+
+str = not (False or True) 
+print(str)              # False
+
+str = not (True or False) 
+print(str)              # False
+
+str = not (True or True) 
+print(str)              # False
+
 ## Xor
 str = (not (False and False)) and (False or False)
 print(str)              # False
