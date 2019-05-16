@@ -182,3 +182,25 @@ print(re)
 re = np.ones(n)
 print(re)
     # [1. 1. 1. 1.]
+
+## Flatten
+
+A = np.array([[3.14, 2.71],
+              [6.28, 1.41]])
+
+re = A[1,0]
+print(re)       # 6.28
+
+re = A[1][0]
+print(re)       # 6.28
+
+for row in A:
+    print(row)
+    # [3.14 2.71]
+    # [6.28 1.41]
+
+B = A.flatten()
+print(B)        # [3.14 2.71 6.28 1.41]
+
+re = B[np.array([0,2])]
+print(re)       # [3.14 6.28]
