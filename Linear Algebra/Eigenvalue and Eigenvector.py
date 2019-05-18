@@ -3,7 +3,7 @@
 import numpy as np
 
 """
-A·V = λ·V
+A|V⟩ = λ|V⟩
 λ: Eigenvalue
 V: Eigenvector
 """
@@ -26,4 +26,4 @@ for n in range(0,len(V)):
     lhs = np.dot(A,  vec)
     rhs = np.dot(val,vec)
     print("The eigenvalue: %f corresponds eigenvector:" %val, vec, ";")
-    print("Then, A·V equals:", lhs, "and λ·V equals:", rhs, ".\n")
+    print("Then, A|V⟩ equals:", lhs, "and λ|V⟩ equals:", rhs, ".\n")
