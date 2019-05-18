@@ -16,10 +16,10 @@ print("The Source Matrix：\n{}".format(A))
 
 λ, V = np.linalg.eig(A)
 
-print("The eigenvalue：\n{}" .format(λ))
-print("The eigenvector：\n{}".format(V))
+print("The eigenvalues：\n{}" .format(λ))
+print("The eigenvectors：\n{}".format(V))
 
-print("Print every eigenvalues and the corresponding eigenvectors.")
+print("\nPrint every eigenvalues and the corresponding eigenvectors.\n")
 for n in range(0,len(V)):
     val = λ[n]
     vec = V[:,n]
