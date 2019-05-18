@@ -23,7 +23,7 @@ print("\nPrint every eigenvalues and the corresponding eigenvectors.\n")
 for n in range(0,len(V)):
     val = λ[n]
     vec = V[:,n]
-    lhs = np.dot(A,  vec)
+    lhs = np.dot(A,vec)
     rhs = np.dot(val,vec)
     print("The eigenvalue: %f corresponds eigenvector:" %val, vec, ";")
     print("Then, A|V⟩ equals:", lhs, "and λ|V⟩ equals:", rhs, ".\n")

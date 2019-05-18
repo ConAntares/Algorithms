@@ -1,12 +1,12 @@
 #### Eigenvalue and Eigenvector
 
+using LinearAlgebra
+
 """
 A|V⟩ = λ|V⟩
 λ: Eigenvalue
 V: Eigenvector
 """
-
-using LinearAlgebra
 
 A = [3.14 1.59 2.65;
      2.71 8.28 1.82;
