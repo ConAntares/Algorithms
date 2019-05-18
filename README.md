@@ -11,7 +11,7 @@
 
 ## About this repository
 
-This Repository is used to store some algorithms for Physics. Julia is the main Language. 
+This Repository is used to store some algorithms for Physics. Julia is the preferred Language. 
 
 ## How to use
 
