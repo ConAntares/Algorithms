@@ -6,7 +6,7 @@ using LinearAlgebra
 A = [1 6 4 3;
      6 2 1 9;
      5 4 6 6;
-     4 5 2 5;]
+     4 5 2 4;]
 
 # The value of determinant
 det(A)
