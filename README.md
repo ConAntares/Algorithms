@@ -9,10 +9,25 @@
 
 ![Open Source](https://github.com/ConAntares/Temples/blob/master/Attachments/OpenSource.svg)
 
-Repository for Algorithms.
+## About this repository
 
-Julia is the main Language.
+This Repository is used to store some algorithms for Physics. Julia is the main Language. 
+
+## How to use
+
+Please [clone this repository](https://github.com/ConAntares/Algorithms.git) to your computer and use [Typora](https://www.typora.io/) or [VSCode](https://code.visualstudio.com/) with Extension [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one), or other Markdown Editors to read this lecture.
+
+Enjoy it!  
+✿✿ヽ(°▽°)ノ✿✿
+
+## Contact me
+
+E-mail: LukeNiu@outlook.com  
+QQ-Group: 436192270
+
+## Acknowledge
 
 Thank you for visiting.
 
-My QQ Group: 436192270
+Sincerely,  
+Luke
