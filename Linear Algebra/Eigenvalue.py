@@ -19,10 +19,11 @@ print("The Source Matrix：\n{}".format(A))
 print("The eigenvalue：\n{}" .format(λ))
 print("The eigenvector：\n{}".format(V))
 
+print("Print every eigenvalues and the corresponding eigenvectors.")
 for n in range(0,len(V)):
     val = λ[n]
     vec = V[:,n]
-    print("The eigenvalue: %f corresponds eigenvector:" %val, vec, ";")
     lef = np.dot(A,  vec)
     rig = np.dot(val,vec)
-    print("Then, A·V equals:", lef, "and λ·V equals:", rig, ".")
+    print("The eigenvalue: %f corresponds eigenvector:" %val, vec, ";")
+    print("Then, A·V equals:", lef, "and λ·V equals:", rig, ".\n")
