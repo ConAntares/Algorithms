@@ -53,7 +53,21 @@ def NAND(x1,x2):
     else:
         return 1
 
-print(NAND(0,0))     # 1
-print(NAND(0,1))     # 1
-print(NAND(1,0))     # 1
-print(NAND(1,1))     # 0
+print(NAND(0,0))    # 1
+print(NAND(0,1))    # 1
+print(NAND(1,0))    # 1
+print(NAND(1,1))    # 0
+
+## XOR: A simple 2-layered perceptron
+
+def XOR(x1,x2):
+    a1 = NAND(x1,x2)
+    a2 = OR(x1,x2)
+    b  = AND(a1,a2)
+    return b
+
+print(XOR(0,0))     # 0
+print(XOR(0,1))     # 1
+print(XOR(1,0))     # 1
+print(XOR(1,1))     # 0
+
