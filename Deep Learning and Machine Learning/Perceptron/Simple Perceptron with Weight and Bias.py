@@ -6,7 +6,7 @@ x = np.array([0.0,1.0])     # Input
 w = np.array([0.5,0.5])     # Weight
 b = -0.75                   # Bias
 
-re = w*x
+re = w * x
 print(re)
     # [0.  0.5]
 re = np.sum(w*x) + b
@@ -59,12 +59,11 @@ print(NAND(1,0))    # 1
 print(NAND(1,1))    # 0
 
 ## XOR: A simple 2-layered perceptron
-
 def XOR(x1,x2):
-    a1 = NAND(x1,x2)
-    a2 = OR(x1,x2)
-    b  = AND(a1,a2)
-    return b
+    α1 = NAND(x1,x2)
+    α2 = OR(x1,x2)
+    β  = AND(α1,α2)
+    return β
 
 print(XOR(0,0))     # 0
 print(XOR(0,1))     # 1
