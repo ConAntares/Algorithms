@@ -59,5 +59,4 @@ re = np.sum(w*x) + b
 print(re)
     # -0.25
 
-def AND_plus(x1, x2):
-    
+# def AND_plus(x1, x2):
