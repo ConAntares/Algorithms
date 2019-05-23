@@ -19,7 +19,6 @@ if len(E) == len(A):
 elif len(E) != len(A):
     print("This matrix cannot be diagonalized.")
 
-
 Λ = np.dot(np.dot(np.linalg.inv(V), A),V)
 print("The diagonalized matrix is: \n",Λ)
 
