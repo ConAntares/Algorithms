@@ -30,8 +30,8 @@ def OR(x1,x2):
         return 1
 
 print(OR(0,0))     # 0
-print(OR(0,1))     # 0
-print(OR(1,0))     # 0
+print(OR(0,1))     # 1
+print(OR(1,0))     # 1
 print(OR(1,1))     # 1
 
 def NOT(x):
@@ -45,3 +45,18 @@ def NOT(x):
 
 print(NOT(0))     # 1
 print(NOT(1))     # 0
+
+def NAND(x1,x2):
+    w1 = -0.5
+    w2 = -0.5
+    θ  = -0.75
+    t  = x1*w1 + x2*w2
+    if t <= θ:
+        return 0
+    elif t > θ:
+        return 1
+
+print(NAND(0,0))     # 1
+print(NAND(0,1))     # 1
+print(NAND(1,0))     # 1
+print(NAND(1,1))     # 0
