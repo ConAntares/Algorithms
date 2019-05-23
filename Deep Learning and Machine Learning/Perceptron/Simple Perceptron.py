@@ -45,18 +45,3 @@ def NOT(x):
 
 print(NOT(0))     # 1
 print(NOT(1))     # 0
-
-## Weight and Bias
-
-x = np.array([0.0,1.0])     # Input
-w = np.array([0.5,0.5])     # Weight
-b = -0.75                   # Bias
-
-re = w*x
-print(re)
-    # [0.  0.5]
-re = np.sum(w*x) + b
-print(re)
-    # -0.25
-
-# def AND_plus(x1, x2):
