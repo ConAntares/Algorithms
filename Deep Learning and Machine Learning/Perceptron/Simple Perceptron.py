@@ -18,7 +18,6 @@ print(AND(0,1))     # 0
 print(AND(1,0))     # 0
 print(AND(1,1))     # 1
 
-
 def OR(x1,x2):
     w1 = 0.5
     w2 = 0.5
