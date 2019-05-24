@@ -59,3 +59,14 @@ print(NAND(0,0))     # 1
 print(NAND(0,1))     # 1
 print(NAND(1,0))     # 1
 print(NAND(1,1))     # 0
+
+def XOR(x1,x2):
+    α1 = NAND(x1,x2)
+    α2 = OR(x1,x2)
+    β  = AND(α1,α2)
+    return β
+
+print(XOR(0,0))     # 0
+print(XOR(0,1))     # 1
+print(XOR(1,0))     # 1
+print(XOR(1,1))     # 0
