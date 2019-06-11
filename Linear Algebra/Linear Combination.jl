@@ -2,10 +2,14 @@
 
 function lincomb(coeff, vectors)
     n = length(vectors[1])
-    a = zeros(n)
+    r = zeros(n)
     for i = 1:length(vectors)
-        a = a + coeff[i] * vectors[i]
+        r = r + coeff[i] * vectors[i]
     end
-    return a
+    return r
 end
 
+re = lincomb(([-0.5, 1.5]),([1, 2], [3, 4]))
+
+println(re)
+    # [4.0, 5.0]
