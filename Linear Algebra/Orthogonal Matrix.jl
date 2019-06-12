@@ -1,6 +1,14 @@
-#### Orthogonal matrix
+#### Orthogonal Matrix
 
 using LinearAlgebra
+
+# About Orthogonal Matrix
+"""
+The Real Matrix A is Orthogonal 
+<=> A' * A = I, A * A' = I
+<=> A is invertible, and A^(-1) = A'
+"""
+
 
 # Input a n*n array as the matrix you want to analysis.
 D = [1 0 0;
