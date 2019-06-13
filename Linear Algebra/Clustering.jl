@@ -3,7 +3,7 @@
 using LinearAlgebra
 using Statistics
 
-function JClust(X, reps, assignment)
+function JCluster(X, reps, assignment)
     return mean([norm(X[i] - reps[assignment[i]])^2 for i = 1:length(X)])
 end
 
@@ -16,5 +16,5 @@ R = [[ 1, 1],
 
 A = [1, 2, 1]
 
-re = JClust(U, R, A)
+re = JCluster(U, R, A)
 println(re)             # 2.0
