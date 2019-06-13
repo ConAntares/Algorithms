@@ -14,8 +14,11 @@ Properties
     ‖A + B‖ ≤ ‖A‖ + ‖B‖
 """
 
+def norm(x):
+    return np.linalg.norm(x)
+
 A = np.array([2,-1, 2])
-r = np.linalg.norm(A)
+r = norm(A)
 print(r)        # 3.0
 
 # RMS Value
