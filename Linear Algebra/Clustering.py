@@ -10,7 +10,7 @@ def JCluster(X, reps, assignment):
     t = 0
     c = 0
     for i in range(0, len(X)):
-        c = c + norm(X[i]-reps[assignment[i]])**2
+        c = c + norm(X[i] - reps[assignment[i]])**2
         t = t + 1
     r = c / t
     return r
