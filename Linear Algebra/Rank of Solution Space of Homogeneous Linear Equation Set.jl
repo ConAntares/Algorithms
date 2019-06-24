@@ -3,15 +3,12 @@
 using LinearAlgebra
 
 # Input a array as the matrix you want to analysis.
-D = 
-[
-    4 2 3 4;
-    3 4 5 5;
-    5 3 6 6;
-    3 3 9 6;
-    8 2 4 8;
-    2 4 9 5
-]
+D = [ 4 2 3 4;
+      3 4 5 5;
+      5 3 6 6;
+      3 3 9 6;
+      8 2 4 8;
+      2 4 9 5 ]
 # The rank of your matrix:
 Rd = rank(D)
 # The number of unknown numbers:

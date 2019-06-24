@@ -21,8 +21,8 @@ for i in 1:length(A)
         end
     end
 end
-println("The Order Number of this Sequence is: ",o)
-println("The Reverse Order Number of this Sequence is: ",t)
+println("The Order Number of this Sequence is: ", o)
+println("The Reverse Order Number of this Sequence is: ", t)
 
 # Determine whether the sequence is odd or even:
 if rem(0,2) == 0
