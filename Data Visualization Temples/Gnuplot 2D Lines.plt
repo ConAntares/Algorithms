@@ -1,9 +1,12 @@
 #### 2D Plot with Gnuplot Lines
 
-set termoption enhanced
+# set termoption enhanced
+# # set terminal   latex
+# # set output  "Gnuplot 2D Lines.tex"
+set terminal    epslatex standalone lw 2 color 11
 
 set title   "Title" font "CMU-Serif"
-set xlabel  "X-Label" font "CMU-Serif"
+set xlabel  "X-Label $x$" font "CMU-Serif"
 set ylabel  "Y-Label" font "CMU-Serif"
 set xrange  [-0.1: 4.1]
 set yrange  [-0.1: 2.1]
