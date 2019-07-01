@@ -1,1 +1,1 @@
-#### 3D Plot with Gnuplot
+#### 3D Plot with Gnuplot Surface
