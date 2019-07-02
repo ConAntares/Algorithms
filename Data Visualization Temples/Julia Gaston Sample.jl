@@ -1,9 +1,10 @@
 #### Julia Gaston Sample
 
-using Gaston
+using Gaston; plotcom = ""
 
-t = -4:0.01:4
+X = range(-2pi, stop=2pi, length=100)
+Y = 1.5 .* sin.(0.3 .+ 0.7X)
 
 figurename = "JuliaGnuplot"
-postcomm = "set terminal cairolatex standalone; set output '$figurename.tex'"
-plot(t, sinc.(t), font="Cambria,12", plotstyle="lines", legend="Function", gpcom=postcomm)
+# plotcom = "set terminal cairolatex standalone; set output '$figurename.tex'"
+plot(X, Y, font="Cambria,12", plotstyle="lines", legend="Function", gpcom=plotcom)
