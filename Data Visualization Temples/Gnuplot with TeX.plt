@@ -1,7 +1,7 @@
-wrap(TeXstring) = '\begin{document} '.TeXstring.' \end{document}'
-title = '\TeX\ is Number $\displaystyle\sum_{n=1}^\infty\frac{-e^{i\pi}}{2^n}$'
-set print 'eq.tex'
-print wrap(title)
-unset print
-!latex2png eq
-!display eq.png
+set term tikz standalone size 7cm, 3cm fontscale 0.6
+set ylabel "{\LaTeX\ -- $ \gamma $}"
+set xlabel "{\LaTeX\ -- $ x $}"
+set output "example.tex"
+plot [0:1] gamma(x) title "$ \gamma(x) $"
+set output
+!pdflatex example
