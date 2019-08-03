@@ -1,12 +1,13 @@
 #### Julia Gaston Sample
 
-using Gaston
+#plotcom = "set terminal cairolatex standalone; set output '$figurename.tex'"
 
-plotcom = ""
+using Gaston
 
 X = range(-2pi, stop=2pi, length=100)
 Y = 1.5 .* sin.(0.3 .+ 0.7X)
 
+plotcom = ""
 figurename = "JuliaGnuplot"
-#plotcom = "set terminal cairolatex standalone; set output '$figurename.tex'"
-plot(X, Y, font="Cambria,12", plotstyle="lines", legend="Function", gpcom=plotcom)
+
+plot(X, Y, font="Serif,16", plotstyle="lines", title="Title" ,legend="Function", gpcom=plotcom)
