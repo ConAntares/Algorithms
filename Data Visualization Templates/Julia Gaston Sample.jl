@@ -1,6 +1,8 @@
 #### Julia Gaston Sample
 
-using Gaston; plotcom = ""
+using Gaston
+
+plotcom = ""
 
 X = range(-2pi, stop=2pi, length=100)
 Y = 1.5 .* sin.(0.3 .+ 0.7X)
