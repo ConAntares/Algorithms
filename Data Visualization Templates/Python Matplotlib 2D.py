@@ -1,4 +1,4 @@
-#### 2D Plot with Matplotlib in Python
+#### 2D Plotting with Matplotlib in Python
 
 import numpy as np
 import matplotlib as mpl

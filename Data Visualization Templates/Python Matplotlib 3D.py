@@ -1,4 +1,4 @@
-#### 3D Plot with Matplotlib in Python
+#### 3D Plotting with Matplotlib in Python
 
 import numpy as np
 import matplotlib as mpl
@@ -63,7 +63,7 @@ ax.set_axis_on()
 
 ## Figure Output
 
-# fig.savefig("Python Matplotlib 3D.pdf", dpi=512)
+fig.savefig("Python Matplotlib 3D.pdf", dpi=512)
 # fig.savefig("Python Matplotlib 3D.png", dpi=512)
 plt.show()
 
