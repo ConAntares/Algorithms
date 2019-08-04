@@ -8,7 +8,7 @@ using LaTeXStrings
 Plots.PyPlot.rc("text", usetex = "true")
 Plots.PyPlot.rc("font", family = "CMU Serif")
 
-X = range(-4pi, 4pi, length=100)
+X = range(-pi*pi, pi*pi, length=100)
 Y = pi/2 .* sin.(1/2 .+ (pi/4)X)
 
 plot(dpi=256, gridls=:dash, legend=:topright, frame=:both,
