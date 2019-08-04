@@ -17,5 +17,3 @@ plot(X,Y,lw=4, label = raw"Function $f=f(x)$")
 legend(loc="best")
 grid(true, linestyle="--", color="#D0D0D0", lw=1, alpha=0.5)
 tick_params(direction="in", top=true, right=true, bottom=true, left=true, which="both")
-
-show()
