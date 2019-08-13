@@ -1,4 +1,5 @@
 #### Richardson Extrapolation
+# coding: utf-8
 
 import numpy as np
 import time
@@ -39,9 +40,14 @@ def RE2(Y):
         i = i + 1
     return R2
 
+def RET(Y):
+    R2 = np.ones(count)
+    Rt = RE2(RE2(RE2(RE2(RE2(RE2(RE2(RE2(RE2(RE2(RE2(RE2(RE2(RE2(RE2(RE2(R2))))))))))))))))
+    return Rt
+
 U1 = RE1(Y)
 U2 = RE2(Y)
-U3 = RE2(RE2(RE2(U2)))
+U3 = RET(RET(RET(RET(RET(RET(RET(RET(RET(RET(RET(RET(RET(RET(RET(RET(U2))))))))))))))))
 
 td = time.time() - to
 print("The time interval is %f s." %td)
