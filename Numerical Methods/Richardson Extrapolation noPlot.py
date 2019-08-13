@@ -45,9 +45,24 @@ def RET(Y):
     Rt = RE2(RE2(RE2(RE2(RE2(RE2(RE2(RE2(RE2(RE2(RE2(RE2(RE2(RE2(RE2(RE2(R2))))))))))))))))
     return Rt
 
+def RER(Y):
+    R2 = np.ones(count)
+    Rr = RET(RET(RET(RET(RET(RET(RET(RET(RET(RET(RET(RET(RET(RET(RET(RET(R2))))))))))))))))
+    return Rr
+
+def REF(Y):
+    R2 = np.ones(count)
+    Rr = RER(RER(RER(RER(RER(RER(RER(RER(RER(RER(RER(RER(RER(RER(RER(RER(R2))))))))))))))))
+    return Rr
+
+def REC(Y):
+    R2 = np.ones(count)
+    Rr = REF(REF(REF(REF(REF(REF(REF(REF(REF(REF(REF(REF(REF(REF(REF(REF(R2))))))))))))))))
+    return Rr
+
 U1 = RE1(Y)
 U2 = RE2(Y)
-U3 = RET(RET(RET(RET(RET(RET(RET(RET(RET(RET(RET(RET(RET(RET(RET(RET(U2))))))))))))))))
+U3 = REC(U2)
 
 td = time.time() - to
 print("The time interval is %f s." %td)
@@ -56,5 +71,5 @@ print("The time interval is %f s." %td)
 # plt.plot(X, Y, "o", c="#B4B4B4", alpha=0.9)
 # plt.plot(X[0:len(U1)-1], U1[0:len(U1)-1], c="#FF1E14", alpha=0.9)
 # plt.plot(X[0:len(U1)-2], U2[0:len(U1)-2], c="#1978F0", alpha=0.9)
-# plt.tick_params(direction='in')
+# plt.tick_params(diREFtion='in')
 # plt.show()
