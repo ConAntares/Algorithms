@@ -8,22 +8,34 @@ from matplotlib.colors import LinearSegmentedColormap
 
 ## Lines Colors
 
-myBlack     = "#282828" # 040,040,040
-myGary      = "#B4B4B4" # 180,180,180
-myRed       = "#FF1E14" # 240,020,010
-myOrange    = "#FF7800" # 255,120,000
-myGold      = "#FFC814" # 255,200,020
-myYellow    = "#F0F000" # 240,240,000
-myGreen     = "#32B432" # 050,180,050
-myEmerald   = "#64CDCD" # 100,205,205
-myCyan      = "#00B4DC" # 000,180,220
-mySky       = "#00A0DC" # 000,160,220
-myBlue      = "#1978F0" # 025,120,190
-myDarkBlue  = "#3C78B4" # 060,120,180
-myViolet    = "#A064DC" # 160,100,220
-myPurple    = "#8C14C8" # 140,020,200
-myPink      = "#DC64C8" # 220,100,200
-myBrown     = "#8C5A50" # 140,090,080
+caBlack         = "#282828" # 040,040,040
+caGary          = "#B4B4B4" # 180,180,180
+caRed           = "#FF1E14" # 240,020,010
+caPaleOrange    = "E69650"  # 230,150,080
+caOrange        = "#FF7800" # 255,120,000
+caGold          = "#FFC814" # 255,200,020
+caYellow        = "#F0F000" # 240,240,000
+caAshenGreen    = "#9BA546" # 155,165,070
+caPaleGreen     = "#5FB946" # 095,185,070
+caGreen         = "#32B432" # 050,180,050
+caEmerald       = "#64CDCD" # 100,205,205
+caCyan          = "#00B4DC" # 000,180,220
+caPaleCyanGreen = "#4BAF8C" # 075,175,140
+caPaleCyanBlue  = "#4BAAA5" # 075,170,165
+caPaleSky       = "#4BAABE" # 075,170,190
+caSky           = "#00A0DC" # 000,160,220
+caBlue          = "#1978F0" # 025,120,240
+caPaleBlue      = "#69AFE6" # 105,175,230
+caDarkBlue      = "#3C78B4" # 060,120,180
+caViolet        = "#A064DC" # 160,100,220
+caPaleViolet    = "#B482EB" # 180,130,235
+caPurple        = "#8C14C8" # 140,020,200
+caPalePurple    = "#DC8CE6" # 220,140,230
+caWarmPurple    = "#E691C8" # 230,145,200
+caPink          = "#DC64C8" # 220,100,200
+caPalePink      = "#F096A0" # 240,150,160
+caBrown         = "#8C5A50" # 140,090,080
+caAshen         = "#BEA04B" # 190,160,075
 
 ## IR CA Color Map
 
