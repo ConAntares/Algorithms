@@ -11,6 +11,7 @@ For each i = 1,...,k; A(i) is a linear combination of Q(1),...,Q(i), and Q(i) is
 If the vectors A(1),...,A(j-1) are linearly independent but A(1),...,A(j) are linearly dependent, the algorithm detects this and terminates.
 Inother words, the Gram-Schmidt algorithm finds the first vector A(j) that is a linear combination of previous vectors A(1),...,A(j-1).
 """
+
 # Description for Gram-Schmidt Algorithm
 """
 given n-vectors A(1),...,A(k).
