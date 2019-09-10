@@ -99,7 +99,7 @@ print(re)
     # [[ 3.41  4.92 13.57]
     #  [ 8.84 29.15 49.88]]
 
-re = np.dot(A.T,B)
+re = np.dot(A.T,B)          # Matrix Product
 print(re)
     # [[12.25 22.53 26.21]
     #  [18.02 34.07 38.98]
