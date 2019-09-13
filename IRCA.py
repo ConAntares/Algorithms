@@ -9,7 +9,7 @@ from matplotlib.colors import LinearSegmentedColormap
 ## Lines Colors
 
 caBlack         = "#282828" # 040,040,040
-caGary          = "#B4B4B4" # 180,180,180
+caGray          = "#B4B4B4" # 180,180,180
 caRed           = "#FF1E14" # 240,020,010
 caPaleOrange    = "E69650"  # 230,150,080
 caOrange        = "#FF7800" # 255,120,000
@@ -25,7 +25,7 @@ caPaleCyanBlue  = "#4BAAA5" # 075,170,165
 caPaleSky       = "#4BAABE" # 075,170,190
 caSky           = "#00A0DC" # 000,160,220
 caBlue          = "#1978F0" # 025,120,240
-caPaleBlue      = "#69AFE6" # 105,175,230
+caPaleBlue      = "#64AADC" # 100,170,220
 caDarkBlue      = "#3C78B4" # 060,120,180
 caViolet        = "#A064DC" # 160,100,220
 caPaleViolet    = "#B482EB" # 180,130,235
