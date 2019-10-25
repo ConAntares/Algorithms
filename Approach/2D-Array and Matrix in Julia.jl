@@ -150,6 +150,7 @@ println(typeof(re))
 ## Reshape
 
 ## Special Matrices
+# Identity Matrix
 n = 4
 A = Matrix{Float64}(I, n, n)
 println(A)
