@@ -38,6 +38,7 @@ caBlueViolet    = "#7864FA" # 120,120,250
 caVioletBlue    = "#825AFF" # 130,090,255
 caViolet        = "#A064DC" # 160,100,220
 caPaleViolet    = "#B482EB" # 180,130,235
+caLightViolet   = "#C38CF5" # 195,140,245
 caPurple        = "#8C14C8" # 140,020,200
 caPalePurple    = "#DC8CE6" # 220,140,230
 caWarmPurple    = "#E691C8" # 230,145,200
