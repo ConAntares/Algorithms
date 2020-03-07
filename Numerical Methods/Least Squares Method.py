@@ -1,1 +1,0 @@
-#### Least Squares Method

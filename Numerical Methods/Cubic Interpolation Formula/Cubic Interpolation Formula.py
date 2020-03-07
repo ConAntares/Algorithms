@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.interpolate import interp1d
 
-x, y = np.loadtxt('Data/cubic.dat', unpack=True)
+x, y = np.loadtxt('Data/Cubic.dat', unpack=True)
 t = np.linspace(0.01, 67, 100)
 
 f = interp1d(x, y, kind='cubic')
