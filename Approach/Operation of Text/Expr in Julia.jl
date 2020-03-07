@@ -27,5 +27,9 @@ println(eval(re))
 re = Expr(:call, :+, :1, :2)
 println(re)
     # 1 + 2
-println(eval(re))
+
+e = eval(re)
+println(e)
     # 3
+println("$re, $e")
+    # 1 + 2, 3
