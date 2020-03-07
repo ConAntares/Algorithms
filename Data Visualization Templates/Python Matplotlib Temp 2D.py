@@ -30,20 +30,20 @@ line,= plt.plot(x, y, color="#F0140A", lw=1.2, alpha=1, label = "Function 1", an
 fill = ax.stackplot(x, y, color="#F0140A", alpha=0.25)
 
 x, y = np.loadtxt("Data/data08.dat", unpack=True)
-line,= plt.plot(x, y, color="#FFC814", lw=1.2, alpha=1, label = "Function 2", antialiased=True)
-fill = ax.stackplot(x, y, color="#FFC814", alpha=0.25)
+line,= plt.plot(x, y, color="#FF8C00", lw=1.2, alpha=1, label = "Function 2", antialiased=True)
+fill = ax.stackplot(x, y, color="#FF8C00", alpha=0.25)
 
 x, y = np.loadtxt("Data/data16.dat", unpack=True)
-line,= plt.plot(x, y, color="#F0F000", lw=1.2, alpha=1, label = "Function 3", antialiased=True)
-fill = ax.stackplot(x, y, color="#F0F000", alpha=0.25)
+line,= plt.plot(x, y, color="#FFD700", lw=1.2, alpha=1, label = "Function 3", antialiased=True)
+fill = ax.stackplot(x, y, color="#FFD700", alpha=0.25)
 
 x, y = np.loadtxt("Data/data24.dat", unpack=True)
 line,= plt.plot(x, y, color="#32B432", lw=1.2, alpha=1, label = "Function 4", antialiased=True)
 fill = ax.stackplot(x, y, color="#32B432", alpha=0.25)
 
 x, y = np.loadtxt("Data/data32.dat", unpack=True)
-line,= plt.plot(x, y, color="#1978BE", lw=1.2, alpha=1, label = "Function 5", antialiased=True)
-fill = ax.stackplot(x, y, color="#1978BE", alpha=0.25)
+line,= plt.plot(x, y, color="#1978F0", lw=1.2, alpha=1, label = "Function 5", antialiased=True)
+fill = ax.stackplot(x, y, color="#1978F0", alpha=0.25)
 
 x, y = np.loadtxt("Data/data40.dat", unpack=True)
 line,= plt.plot(x, y, color="#A064DC", lw=1.2, alpha=1, label = "Function 6", antialiased=True)

@@ -63,7 +63,7 @@ ax.set_axis_on()
 
 ## Figure Output
 
-fig.savefig("Python Matplotlib 3D.pdf", dpi=512)
+# fig.savefig("Python Matplotlib 3D.pdf", dpi=512)
 # fig.savefig("Python Matplotlib 3D.png", dpi=512)
 plt.show()
 
