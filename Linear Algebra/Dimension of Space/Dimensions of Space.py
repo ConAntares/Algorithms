@@ -3,8 +3,8 @@
 import numpy as np
 
 # Input 2 matrices as your spaces (only homogeneous linear equations analyzed):
-S1 = np.array([1,2,-1])     # x + 2y -z = 0, z = x + 2y
-S2 = np.array([2,1,-2])     # 2x + y -2z = 0, z  = x + 1/2y
+S1 = np.array([1, 2,-1])    # x + 2y  -z = 0, z = x + 2y
+S2 = np.array([2, 1,-2])    # 2x + y -2z = 0, z = x + 1/2y
 
 # Intersection:
 Si = np.intersect1d(S1, S2)
