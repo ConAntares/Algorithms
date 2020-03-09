@@ -1,6 +1,0 @@
-#### Linear Dynamical System
-
-
-"""
-
-"""
