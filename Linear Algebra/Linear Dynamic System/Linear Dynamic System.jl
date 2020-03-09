@@ -5,7 +5,7 @@ Let's simulate a time-invariant linear dynamic system
     x(t+1) = Ax(t), t = 1,...,T,...
 """
 
-using Plots
+using Plots; pyplot()
 
 x_1 = [ 1, 0, -1]
 n = length(x_1)
@@ -21,4 +21,4 @@ for t=1:T-1         # Dynamics recursion
     # println(t, state_traj, "\n")
 end
 
-# plot(1:T, state_traj', xlabel="t", label=["(x_t)_1", "(x_t)_2", "(x_t)_3"])
+plot(1:T, state_traj', xlabel="t", label=["(x_t)_1", "(x_t)_2", "(x_t)_3"])
