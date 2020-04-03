@@ -1,7 +1,5 @@
 #### Regression Model
 
-using LinearAlgebra
-
 # About Regression Model
 """
 Regression Model is the affine function of x given by
@@ -11,15 +9,22 @@ Regression Model is used to guess or approximate a real or observed value
 of the number y that is associated with x.
 """
 
+using LinearAlgebra
+using VMLS
+
 # Parameters
 β = [148.73, -18.85]
 v = 54.40
+D = house_sales_data()
 
-ŷ(x) =  x' * β + v
+yD = D["price"]
+X  = [D["area"] D["beds"]]'
 
-# Evaluate Regression Model Prediction
-x = [0.846, 1]
-y = 115
+ŷ(x)  =  x' * β .+ v    # Vector of predicted outcomes
+rd(x) = yD - ŷ(x)       # Vector of predicted errors
 
-re = ŷ(x)
-println(re)     # 161.37557999999999
+# RMS prediction error
+println(rms(rd(X)))
+
+# Compare with standard deviation of prices
+println(stdev(ŷ(X)))
