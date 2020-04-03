@@ -7,7 +7,7 @@ Let's simulate a time-invariant linear dynamic system
 
 using Plots; pyplot()
 
-x_1 = [ 1, 0, -1]
+x_1 = [ 1, 0, -1]   # Initinal state
 n = length(x_1)
 T = 50
 A = [ 0.97  0.10 -0.05;
