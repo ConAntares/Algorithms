@@ -1,6 +1,6 @@
 #### Array in Python
 
-#%% Normal Array Sentences
+### Normal Array Sentences
 
 import numpy as np
 
@@ -9,7 +9,7 @@ sqrt_data = np.sqrt(data)
 
 print(type(data))
 
-#%% Data
+### Data
 
 ## Data Types
 """
@@ -58,7 +58,7 @@ print(sqrt_data)
 print(sqrt_data.real)
 print(sqrt_data.imag)
 
-#%% Arrays Created from Lists and Other Array-like Objects
+### Arrays Created from Lists and Other Array-like Objects
 
 ## Summary of NumPy functions for generating arrays
 """
@@ -111,7 +111,7 @@ print("This array = \n",array_b,"\n",
 # Control the Scientific Counting, we can use: np.set_printoptions(suppress=False)
 
 
-#%% Arrays Filled with Constant Value Method 1
+### Arrays Filled with Constant Value Method 1
 
 """
 The functions np.zeros and np.ones create and return arrays filled with zeros and ones, respectively.
@@ -139,7 +139,7 @@ However, NumPy also provides the function np.full that does exactly this in one 
 np.full is slightly more efficient since it avoids the multiplication.
 """
 
-#%% Empty Array
+### Empty Array
 
 """
 In this last example we also used the np.empty function, which generates an array with uninitialized values, of the given size.
@@ -161,7 +161,7 @@ x3 = np.zeros(4)
 x3.fill(5.0)
 print(x3)                     # np.full will make 0 × N = N.
 
-#%% Arrays Filled with Incremental Sequences
+### Arrays Filled with Incremental Sequences
 
 """
 In numerical computing it is very common to require arrays with evenly spaced values between a start value and end value.
@@ -178,7 +178,7 @@ print(x1,"\n",x2)
 # np.arange(start number, end number, the step value)
 # np.linspace(start number, end number, the step number)
 
-#%% Mesh-grid Arrays
+### Mesh-grid Arrays
 
 """
 Multidimensional coordinate grids can be generated using the function np.meshgrid.
@@ -212,7 +212,7 @@ using a slightly different syntax based on indexing and slice objects.
 See their docstrings or the NumPy documentation for details.
 """
 
-#%% Creating Uninitialized Arrays
+### Creating Uninitialized Arrays
 
 """
 To create an array of specific size and data type, 
@@ -234,7 +234,7 @@ and if the performance gain is not essential it is better to use np.zeros,
 to minimize the likelihood of subtle and hard to reproduce bugs due to uninitialized values in the array returned by np.empty.
 """
 
-#%% Creating Matrix Arrays
+### Creating Matrix Arrays
 
 """
 Matrices, or two-dimensional arrays, are an important case for numerical computing.
@@ -293,7 +293,7 @@ print (b)
 
 ### Summary
 
-#%% Scale:
+### Scale:
 
 import numpy as np
 
@@ -301,7 +301,7 @@ print('\n Scale in NumPy:')
 ћ = 1.0545726663
 print('ћ:',ћ)
 
-#%% Vector
+### Vector
 
 import numpy as np
 
@@ -318,7 +318,7 @@ print('np.arange(0.0,10,2):',κ)
 η = np.linspace(0,10,6)
 print('np.linspace(0,10,6):',η)
 
-#%% Matrix
+### Matrix
 
 import numpy as np
 
@@ -354,7 +354,7 @@ b = np.diag(np.linspace(0,20,5))
 print('np.diag(np.linspace(0,20,5))=\n',b)
 
 
-#%% Tensor:
+### Tensor:
 
 import numpy as np
 
