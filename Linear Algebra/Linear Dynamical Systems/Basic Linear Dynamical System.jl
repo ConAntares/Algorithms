@@ -16,9 +16,11 @@ A = [ 0.97  0.10 -0.05;
 
 state_traj = [x_1 zeros(n,T-1)]
 
+println(state_traj)
+
 for t=1:T-1         # Dynamics recursion
     state_traj[:,t+1] = A*state_traj[:,t]
     # println(t, state_traj, "\n")
 end
 
-plot(1:T, state_traj', xlabel="t", label=["(x_t)_1", "(x_t)_2", "(x_t)_3"])
+# plot(1:T, state_traj', xlabel="t", label=["(x_t)_1", "(x_t)_2", "(x_t)_3"])

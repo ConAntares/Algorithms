@@ -18,8 +18,6 @@ np.einsum
     Evaluates Einstein's summation convention for multidimensional arrays.
 """
 
-#%%
-
 import numpy as np
 
 x = np.array([1,2,3,4])
@@ -115,4 +113,3 @@ np.kron(N,M)
     #         [0, 1, 2, 3],
     #         [0, 2, 4, 6],
     #         [0, 3, 6, 9]])
-

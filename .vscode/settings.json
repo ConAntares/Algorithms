@@ -2,5 +2,6 @@
     "files.associations": {
         "*.m": "matlab",
         "iostream": "cpp"
-    }
+    },
+    "python.pythonPath": "/usr/bin/python3.7"
 }
