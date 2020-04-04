@@ -34,20 +34,20 @@ line,= plt.plot(x, y, color="#FF8C00", lw=1.2, alpha=1, label = "Function 2", an
 fill = ax.stackplot(x, y, color="#FF8C00", alpha=0.25)
 
 x, y = np.loadtxt("Data/data16.dat", unpack=True)
-line,= plt.plot(x, y, color="#FFD700", lw=1.2, alpha=1, label = "Function 3", antialiased=True)
-fill = ax.stackplot(x, y, color="#FFD700", alpha=0.25)
+line,= plt.plot(x, y, color="#FFDC00", lw=1.2, alpha=1, label = "Function 3", antialiased=True)
+fill = ax.stackplot(x, y, color="#FFDC00", alpha=0.25)
 
 x, y = np.loadtxt("Data/data24.dat", unpack=True)
 line,= plt.plot(x, y, color="#32B432", lw=1.2, alpha=1, label = "Function 4", antialiased=True)
 fill = ax.stackplot(x, y, color="#32B432", alpha=0.25)
 
 x, y = np.loadtxt("Data/data32.dat", unpack=True)
-line,= plt.plot(x, y, color="#1978F0", lw=1.2, alpha=1, label = "Function 5", antialiased=True)
-fill = ax.stackplot(x, y, color="#1978F0", alpha=0.25)
+line,= plt.plot(x, y, color="#1978FF", lw=1.2, alpha=1, label = "Function 5", antialiased=True)
+fill = ax.stackplot(x, y, color="#1978FF", alpha=0.25)
 
 x, y = np.loadtxt("Data/data40.dat", unpack=True)
-line,= plt.plot(x, y, color="#A064DC", lw=1.2, alpha=1, label = "Function 6", antialiased=True)
-fill = ax.stackplot(x, y, color="#A064DC", alpha=0.25,baseline="zero")
+line,= plt.plot(x, y, color="#A064F0", lw=1.2, alpha=1, label = "Function 6", antialiased=True)
+fill = ax.stackplot(x, y, color="#A064F0", alpha=0.25,baseline="zero")
 
 ## Legend and Axes Setting
 
