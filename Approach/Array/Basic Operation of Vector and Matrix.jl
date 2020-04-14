@@ -1,4 +1,4 @@
-##  Basic Operation of Vector and Matrix
+## Basic Operation of Vector and Matrix
 
 ## Basic Operation of Vector
 
