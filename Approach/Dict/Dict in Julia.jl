@@ -17,7 +17,7 @@ get!(re,5,5.5)
 println(re)
     # Dict(4=>4.4,2=>2.2,3=>3.3,5=>5.5,1=>1.1)
 rf = collect(values(re))
-print(rf)
+println(rf)
     # [4.4, 2.2, 3.3, 5.5, 1.1]
 
 re = Dict(i=>i^2 for i in 1:4)
