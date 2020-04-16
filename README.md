@@ -16,7 +16,7 @@ This Repository is used to store some algorithms for Physics. Python is the pref
 
 ## How to use
 
-Please [clone this repository](https://github.com/ConAntares/Algorithms.git) to your computer and use [Typora](https://www.typora.io/) or [VSCode](https://code.visualstudio.com/) with Extension [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one), or other Markdown Editors to read this lecture.
+Please [clone this repository](https://github.com/ConAntares/Algorithms.git) to your computer and use [Typora](https://www.typora.io/) or [VSCode](https://code.visualstudio.com/) with the extension [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one), or other Markdown Editors to read this lecture.
 
 Enjoy it!  
 ✿✿ヽ(°▽°)ノ✿✿
